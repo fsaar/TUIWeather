@@ -14,8 +14,8 @@ import Foundation
 struct WeatherInfoList : Decodable {
     
     private enum CodingKeys : String,CodingKey {
-        case list = "list"
-        case city = "city"
+        case list
+        case city 
     }
    
     let city : WeatherInfoCity

@@ -27,9 +27,12 @@ class RequestManager : NSObject {
         }
         getDataWithURL(URL: url,completionBlock: completionBlock)
     }
-    
-   
-    
+}
+
+
+// MARK : Private
+
+extension RequestManager {
     fileprivate func getDataWithURL(URL: URL , completionBlock:@escaping ((_ data : Data?,_ error:Error?) -> Void)) {
         let task = session.dataTask(with: URL, completionHandler: { [weak self] (data, _, error) -> (Void) in
             
@@ -43,13 +46,6 @@ class RequestManager : NSObject {
         self.delegate?.didStartURLTask(with: self, session: session)
     }
     
-    
-}
-
-
-// MARK : Private
-
-extension RequestManager {
     fileprivate func baseURL(withPath path: String,and query: [String]? = nil) -> URL? {
         let baseURL = NSURLComponents(string: RequestManagerBaseURL)
         if let baseURL = baseURL {
