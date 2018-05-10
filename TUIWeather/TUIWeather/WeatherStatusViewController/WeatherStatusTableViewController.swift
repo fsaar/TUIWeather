@@ -8,16 +8,13 @@
 
 import UIKit
 
-
+typealias WeatherStatusTableViewControllerModel = (date: String, models : [WeatherStatusTableViewModel])
 
 class WeatherStatusTableViewController: UITableViewController {
-    var weatherStatusDayList: [(date: String, models : [WeatherStatusTableViewModel])] = []
+    var weatherStatusDayList: [WeatherStatusTableViewControllerModel] = []
     var weatherInfoList : WeatherInfoList? = nil {
         didSet {
-            let viewModels = (weatherInfoList?.list ?? []).map { WeatherStatusTableViewModel(with: $0) }
-            let groupdict = Dictionary(grouping: viewModels,by: { $0.dateString })
-            let dateStringTuples = groupdict.map { return (dateString:$0,date:$1.first?.date ?? Date(timeIntervalSince1970: 0),models:$1) }
-            weatherStatusDayList = dateStringTuples.sorted { $0.date < $1.date }.map { ($0.dateString,$0.models)}
+            weatherStatusDayList = viewModels(with: weatherInfoList)
             self.tableView.reloadData()
         }
     }
@@ -40,5 +37,18 @@ class WeatherStatusTableViewController: UITableViewController {
         }
 
         return cell
+    }
+}
+
+fileprivate extension WeatherStatusTableViewController {
+    func viewModels(with infoList : WeatherInfoList?) -> [WeatherStatusTableViewControllerModel] {
+        guard let infoList = infoList else {
+            return []
+        }
+        let viewModels = infoList.list.map { WeatherStatusTableViewModel(with: $0) }
+        let groupdict = Dictionary(grouping: viewModels,by: { $0.dateString })
+        let minDate = Date(timeIntervalSince1970: 0)
+        let dateStringTuples = groupdict.map { return (dateString:$0,date:$1.first?.date ?? minDate,models:$1) }
+        return dateStringTuples.sorted { $0.date < $1.date }.map { ($0.dateString,$0.models)}
     }
 }

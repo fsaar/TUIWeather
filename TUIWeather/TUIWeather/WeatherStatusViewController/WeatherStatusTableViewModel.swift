@@ -40,12 +40,14 @@ struct WeatherStatusTableViewModel  {
     let timeString : String
     let temperature : String
     let date : Date
+    let iconIdentifier : String
     init(with weatherInfo : WeatherInfo) {
         date = Date(timeIntervalSince1970: weatherInfo.timeStamp)
         dateString = WeatherStatusTableViewModel.dateFormatter.string(from: date)
         timeString = WeatherStatusTableViewModel.timeFormatter.string(from: date)
         let temp = Measurement(value: weatherInfo.temperature.current, unit: UnitTemperature.kelvin)
         temperature = WeatherStatusTableViewModel.temperatureFormatter.string(from: temp)
+        iconIdentifier = weatherInfo.iconIdentifier
     }
     
 }
