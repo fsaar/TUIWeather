@@ -14,8 +14,17 @@ class WeatherStatusViewController: UIViewController {
     enum SegueIdentifier : String {
         case weatherTableViewController = "WeatherStatusTableViewControllerSegue"
     }
+    let ukCities : [WeatherInfoCity] = {
+        var cities : [WeatherInfoCity] = []
+        if let path = Bundle.main.path(forResource: "city.list", ofType: "json"),let data = try? NSData(contentsOfFile: path) as Data {
+            cities = ((try? JSONDecoder().decode([WeatherInfoCity].self,from: data)) ?? []).filter { $0.country == "GB" }
+        }
+        return cities
+    }()
+    
     fileprivate let weather = WeatherClient()
     private var weatherStatusTableViewController : WeatherStatusTableViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         weather.cityWeatherForecast(with: WeatherClient.CityIdentifier.London.rawValue) { [weak self] weatherInfoList,_ in

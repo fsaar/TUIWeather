@@ -13,6 +13,7 @@
 		56017D4420A4E0B100520C5E /* WeatherStatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56017D4320A4E0B100520C5E /* WeatherStatusCollectionViewCell.swift */; };
 		56017D4620A4E36000520C5E /* WeatherStatusDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56017D4520A4E36000520C5E /* WeatherStatusDayView.swift */; };
 		56017D4820A4EFE400520C5E /* WeatherStatusImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56017D4720A4EFE400520C5E /* WeatherStatusImageCache.swift */; };
+		56017D4A20A4F36B00520C5E /* city.list.json in Resources */ = {isa = PBXBuildFile; fileRef = 56017D4920A4F36B00520C5E /* city.list.json */; };
 		56577D0F20A392D700B40318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D0E20A392D700B40318 /* AppDelegate.swift */; };
 		56577D1120A392D700B40318 /* WeatherStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D1020A392D700B40318 /* WeatherStatusViewController.swift */; };
 		56577D1420A392D700B40318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56577D1220A392D700B40318 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		56017D4320A4E0B100520C5E /* WeatherStatusCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusCollectionViewCell.swift; sourceTree = "<group>"; };
 		56017D4520A4E36000520C5E /* WeatherStatusDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusDayView.swift; sourceTree = "<group>"; };
 		56017D4720A4EFE400520C5E /* WeatherStatusImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusImageCache.swift; sourceTree = "<group>"; };
+		56017D4920A4F36B00520C5E /* city.list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.list.json; sourceTree = "<group>"; };
 		56577D0B20A392D700B40318 /* TUIWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUIWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56577D0E20A392D700B40318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56577D1020A392D700B40318 /* WeatherStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				56577D1220A392D700B40318 /* Main.storyboard */,
 				56577D1820A392D900B40318 /* Assets.xcassets */,
 				56577D1A20A392D900B40318 /* LaunchScreen.storyboard */,
+				56017D4920A4F36B00520C5E /* city.list.json */,
 				56577D1D20A392D900B40318 /* Info.plist */,
 			);
 			path = TUIWeather;
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56577D1C20A392D900B40318 /* LaunchScreen.storyboard in Resources */,
+				56017D4A20A4F36B00520C5E /* city.list.json in Resources */,
 				56577D1920A392D900B40318 /* Assets.xcassets in Resources */,
 				56577D1420A392D700B40318 /* Main.storyboard in Resources */,
 			);

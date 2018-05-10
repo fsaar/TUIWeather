@@ -10,7 +10,9 @@ enum ClientError : Error {
 class WeatherClient {
     enum CityIdentifier : String {
         case London = "2643743"
-        case Kudepsta = "498817"
+        case Endinburgh = "2650225"
+        case Dublin = ""
+        case Cardiff = "2172349"
     }
     static let jsonDecoder = JSONDecoder()
     

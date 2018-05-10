@@ -1,0 +1,45 @@
+ [{
+		"id": 2643744,
+		"name": "London",
+		"country": "GB",
+		"coord": {
+			"lon": -0.08901,
+			"lat": 51.51334
+		}
+	}, {
+		"id": 2172349,
+		"name": "Cardiff",
+		"country": "AU",
+		"coord": {
+			"lon": 151.666672,
+			"lat": -32.950001
+		}
+	},
+	{
+		"id": 2650225,
+		"name": "Edinburgh",
+		"country": "GB",
+		"coord": {
+			"lon": -3.19648,
+			"lat": 55.952061
+		}
+	},
+	{
+		"id": 2653822,
+		"name": "Cardiff",
+		"country": "GB",
+		"coord": {
+			"lon": -3.18,
+			"lat": 51.48
+		}
+	},
+	{
+		"id": 2655984,
+		"name": "Belfast",
+		"country": "GB",
+		"coord": {
+			"lon": -5.93333,
+			"lat": 54.583328
+		}
+	}
+]
