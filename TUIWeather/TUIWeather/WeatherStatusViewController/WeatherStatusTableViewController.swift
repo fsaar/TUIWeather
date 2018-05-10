@@ -33,7 +33,7 @@ class WeatherStatusTableViewController: UITableViewController {
 
         if let cell = cell as? WeatherStatusTableViewCell {
             let day = weatherStatusDayList[indexPath.row]
-            cell.configure(with: day.date)
+            cell.configure(with: day)
         }
 
         return cell

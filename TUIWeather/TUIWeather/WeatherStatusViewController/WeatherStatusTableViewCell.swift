@@ -9,13 +9,20 @@
 import UIKit
 
 class WeatherStatusTableViewCell: UITableViewCell {
-    @IBOutlet weak var temperature : UILabel!
+    @IBOutlet weak var dateLabel : UILabel!
+    @IBOutlet weak var dayView : WeatherStatusDayView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        prepareForReuse()
+    }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        dateLabel.text = nil
     }
 
-    func configure(with text : String) {
-        self.temperature.text = text
+    func configure(with model : WeatherStatusTableViewControllerModel) {
+        self.dateLabel.text = model.date
+        self.dayView.forecasts = model.models
     }
 }
