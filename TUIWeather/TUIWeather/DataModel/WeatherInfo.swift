@@ -39,8 +39,20 @@ struct WeatherInfo : Equatable,Decodable,CustomStringConvertible {
     
     private enum CodingKeys : String,CodingKey {
         case timeStamp = "dt"
-        case temperature = "main"
-       
+        case temperatures = "main"
+    }
+    private enum WeatherTemperature : String,CodingKey {
+        case temperature = "temp"
+        case temperature_min = "temp_min"
+        case temperature_max = "temp_max"
+    }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        timeStamp = try values.decode(Float.self, forKey: .timeStamp)
+        let temperatures = try values.nestedContainer(keyedBy: WeatherTemperature.self, forKey: .temperatures)
+        temperature = try temperatures.decode(Float.self, forKey: .temperature)
+        temperature_min = try temperatures.decode(Float.self, forKey: .temperature_min)
+        temperature_max = try temperatures.decode(Float.self, forKey: .temperature_max)
     }
     public static func ==(lhs: WeatherInfo,rhs: WeatherInfo) -> (Bool) {
         return lhs.timeStamp == rhs.timeStamp
@@ -50,5 +62,6 @@ struct WeatherInfo : Equatable,Decodable,CustomStringConvertible {
         return timeStamp.description
     }
     let timeStamp : Float
-    let temperature : WeatherTemperature
-}
+    let temperature : Float
+    let temperature_min : Float
+    let temperature_max : Float}
