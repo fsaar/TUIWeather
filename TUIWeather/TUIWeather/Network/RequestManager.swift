@@ -11,8 +11,8 @@ protocol RequestManagerDelegate : class {
 }
 
 class RequestManager : NSObject {
-    weak var delegate : RequestManagerDelegate?
-    fileprivate let RequestManagerBaseURL = "https://samples.openweathermap.org"
+    weak var delegate : RequestManagerDelegate?  
+    fileprivate let RequestManagerBaseURL = "https://api.openweathermap.org"
 
     fileprivate let ApplicationID = "ea7de0326863831395fe4487ac2fb3f1"
     public static let shared =  RequestManager()

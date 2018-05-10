@@ -8,10 +8,16 @@
 
 import UIKit
 
-class WeatherStatusTableViewController: UITableViewController {
 
+
+class WeatherStatusTableViewController: UITableViewController {
+    var weatherStatusDayList: [(date: String, models : [WeatherStatusTableViewModel])] = []
     var weatherInfoList : WeatherInfoList? = nil {
         didSet {
+            let viewModels = (weatherInfoList?.list ?? []).map { WeatherStatusTableViewModel(with: $0) }
+            let groupdict = Dictionary(grouping: viewModels,by: { $0.dateString })
+            let dateStringTuples = groupdict.map { return (dateString:$0,date:$1.first?.date ?? Date(timeIntervalSince1970: 0),models:$1) }
+            weatherStatusDayList = dateStringTuples.sorted { $0.date < $1.date }.map { ($0.dateString,$0.models)}
             self.tableView.reloadData()
         }
     }
@@ -20,11 +26,8 @@ class WeatherStatusTableViewController: UITableViewController {
 
     }
 
-
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return weatherInfoList?.list.count ?? 0
+        return weatherStatusDayList.count
     }
 
     
@@ -32,8 +35,8 @@ class WeatherStatusTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: WeatherStatusTableViewCell.self), for: indexPath)
 
         if let cell = cell as? WeatherStatusTableViewCell {
-            let weatherInfo = weatherInfoList?.list[indexPath.row]
-            cell.configure(with: String(weatherInfo?.temperature ?? 0))
+            let day = weatherStatusDayList[indexPath.row]
+            cell.configure(with: day.date)
         }
 
         return cell

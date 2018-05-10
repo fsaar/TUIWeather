@@ -18,7 +18,7 @@ class WeatherStatusViewController: UIViewController {
     private var weatherStatusTableViewController : WeatherStatusTableViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
-        weather.cityWeather(with: WeatherClient.CityIdentifier.Kudepsta.rawValue) { weatherInfoList,_ in
+        weather.cityWeatherForecast(with: WeatherClient.CityIdentifier.London.rawValue) { weatherInfoList,_ in
             self.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
         }
     }
