@@ -13,7 +13,7 @@ class WeatherStatusCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var temperature : UILabel!
     @IBOutlet weak var time : UILabel!
     private var model : WeatherStatusTableViewModel?
-    private lazy var weatherClient =  WeatherClient()
+    private lazy var weatherImageCache =  WeatherStatusImageCache.shared
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,10 +33,11 @@ class WeatherStatusCollectionViewCell: UICollectionViewCell {
         self.time.text = model.timeString
         self.model = model
         let date = model.date
-        self.weatherClient.statusImage(with: model.iconIdentifier) { [weak self] image, _ in
+        weatherImageCache.image(for: model.iconIdentifier) { [weak self] image in
             if let currentDate = self?.model?.date, currentDate == date {
                 self?.statusImage.image = image
             }
+
         }
     }
 }
