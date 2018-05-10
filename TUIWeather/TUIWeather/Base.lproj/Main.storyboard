@@ -89,25 +89,38 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trc-uV-iOj" userLabel="temperature">
-                                                                        <rect key="frame" x="5" y="55" width="80" height="35"/>
+                                                                        <rect key="frame" x="5" y="52" width="80" height="21"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="McX-Hd-WAz" userLabel="time">
+                                                                        <rect key="frame" x="5" y="75" width="80" height="15"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="15" id="LTN-xA-fTa"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstItem="Trc-uV-iOj" firstAttribute="top" secondItem="PHW-YE-dWH" secondAttribute="bottom" constant="5" id="1MM-xm-rv4"/>
-                                                                <constraint firstAttribute="bottom" secondItem="Trc-uV-iOj" secondAttribute="bottom" id="41i-3r-M4f"/>
-                                                                <constraint firstItem="Trc-uV-iOj" firstAttribute="leading" secondItem="sWD-H2-b78" secondAttribute="leading" constant="5" id="QCV-1D-bc4"/>
-                                                                <constraint firstAttribute="trailing" secondItem="Trc-uV-iOj" secondAttribute="trailing" constant="5" id="eqe-tj-NrK"/>
+                                                                <constraint firstItem="McX-Hd-WAz" firstAttribute="top" secondItem="Trc-uV-iOj" secondAttribute="bottom" constant="2" id="0tM-Ep-0PP"/>
+                                                                <constraint firstItem="Trc-uV-iOj" firstAttribute="top" secondItem="PHW-YE-dWH" secondAttribute="bottom" constant="2" id="1MM-xm-rv4"/>
+                                                                <constraint firstAttribute="bottom" secondItem="McX-Hd-WAz" secondAttribute="bottom" id="1Nw-gJ-LPy"/>
+                                                                <constraint firstItem="Trc-uV-iOj" firstAttribute="leading" secondItem="sWD-H2-b78" secondAttribute="leading" constant="5" id="9Y8-FB-GAf"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Trc-uV-iOj" secondAttribute="trailing" constant="5" id="ctT-XE-hpR"/>
                                                                 <constraint firstItem="PHW-YE-dWH" firstAttribute="top" secondItem="sWD-H2-b78" secondAttribute="top" id="kLW-t8-B6j"/>
+                                                                <constraint firstItem="McX-Hd-WAz" firstAttribute="leading" secondItem="sWD-H2-b78" secondAttribute="leading" constant="5" id="tR0-qt-yg1"/>
+                                                                <constraint firstAttribute="trailing" secondItem="McX-Hd-WAz" secondAttribute="trailing" constant="5" id="yD7-Gb-ESa"/>
                                                                 <constraint firstItem="PHW-YE-dWH" firstAttribute="centerX" secondItem="sWD-H2-b78" secondAttribute="centerX" id="yI1-Lu-diw"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="statusImage" destination="PHW-YE-dWH" id="saI-3O-7O5"/>
                                                                 <outlet property="temperature" destination="Trc-uV-iOj" id="C3b-u4-VwJ"/>
+                                                                <outlet property="time" destination="McX-Hd-WAz" id="vAW-kD-F4j"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
