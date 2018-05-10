@@ -1,7 +1,7 @@
 
 import Foundation
 import CoreData
-
+import UIKit
 enum ClientError : Error {
     case InvalidFormat(data : Data?)
 }
@@ -32,6 +32,24 @@ class WeatherClient {
             
             operationQueue.addOperation {
                 completionBlock(weatherInfoList,nil)
+            }
+        }
+    }
+    
+    func statusImage(with identifier: String,
+                             with operationQueue : OperationQueue = OperationQueue.main,
+                             using completionBlock:@escaping ((_ image:UIImage?,_ error:Error?) -> ()))  {
+        let imagePath = "/img/w/\(identifier).png"
+        networkManager.getDataWithRelativePath(relativePath: imagePath) { data, error in
+            guard let data = data else {
+                operationQueue.addOperation {
+                    completionBlock(nil,error)
+                }
+                return
+            }
+            let image = UIImage(data:data)
+            operationQueue.addOperation {
+                completionBlock(image,nil)
             }
         }
     }

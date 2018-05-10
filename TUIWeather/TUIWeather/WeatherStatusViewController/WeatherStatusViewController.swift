@@ -18,8 +18,8 @@ class WeatherStatusViewController: UIViewController {
     private var weatherStatusTableViewController : WeatherStatusTableViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
-        weather.cityWeatherForecast(with: WeatherClient.CityIdentifier.London.rawValue) { weatherInfoList,_ in
-            self.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
+        weather.cityWeatherForecast(with: WeatherClient.CityIdentifier.London.rawValue) { [weak self] weatherInfoList,_ in
+            self?.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
         }
     }
     
@@ -30,12 +30,7 @@ class WeatherStatusViewController: UIViewController {
         switch segueIdentifier {
         case .weatherTableViewController:
             weatherStatusTableViewController = segue.destination as? WeatherStatusTableViewController
-           
         }
     }
-
-    
-
-
 }
 
