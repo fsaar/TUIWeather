@@ -15,7 +15,7 @@ import Foundation
      },
  
  */
-struct WeatherTemperature : Codable,CustomStringConvertible {
+struct WeatherTemperature : Decodable,CustomStringConvertible {
     
     private enum CodingKeys : String,CodingKey {
         case temperature = "temp"

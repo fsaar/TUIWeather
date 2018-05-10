@@ -11,7 +11,7 @@ import Foundation
   }
 */
 
-struct WeatherInfoList : Codable {
+struct WeatherInfoList : Decodable {
     
     private enum CodingKeys : String,CodingKey {
         case list = "list"

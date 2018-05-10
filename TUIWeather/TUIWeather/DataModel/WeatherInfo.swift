@@ -35,7 +35,7 @@ import Foundation
  
  }
  */
-struct WeatherInfo : Equatable,Codable,CustomStringConvertible {
+struct WeatherInfo : Equatable,Decodable,CustomStringConvertible {
     
     private enum CodingKeys : String,CodingKey {
         case timeStamp = "dt"
