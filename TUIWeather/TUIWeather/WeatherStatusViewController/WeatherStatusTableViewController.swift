@@ -11,16 +11,14 @@ import UIKit
 typealias WeatherStatusTableViewControllerModel = (date: String, models : [WeatherStatusTableViewModel])
 
 class WeatherStatusTableViewController: UITableViewController {
+    @IBOutlet weak var statusMapView : WeatherStatusMapView!
     var weatherStatusDayList: [WeatherStatusTableViewControllerModel] = []
     var weatherInfoList : WeatherInfoList? = nil {
         didSet {
+            statusMapView.city = weatherInfoList?.city
             weatherStatusDayList = viewModels(with: weatherInfoList)
             self.tableView.reloadData()
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

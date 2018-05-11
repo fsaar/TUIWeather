@@ -90,9 +90,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="602"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="OKr-cZ-flr" customClass="WeatherStatusMapView" customModule="TUIWeather" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <mapView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qq3-kh-VoT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="OKr-cZ-flr" id="CPl-F9-mjs"/>
+                                    </connections>
+                                </mapView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Qq3-kh-VoT" firstAttribute="leading" secondItem="OKr-cZ-flr" secondAttribute="leading" id="CtS-8w-cJj"/>
+                                <constraint firstAttribute="trailing" secondItem="Qq3-kh-VoT" secondAttribute="trailing" id="E9k-Of-T6K"/>
+                                <constraint firstItem="Qq3-kh-VoT" firstAttribute="top" secondItem="OKr-cZ-flr" secondAttribute="top" id="LP9-EC-24b"/>
+                                <constraint firstAttribute="bottom" secondItem="Qq3-kh-VoT" secondAttribute="bottom" id="uN5-tI-Ynx"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="mapView" destination="Qq3-kh-VoT" id="MUB-Ib-xxm"/>
+                            </connections>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherStatusTableViewCell" rowHeight="160" id="zBp-TK-ynk" customClass="WeatherStatusTableViewCell" customModule="TUIWeather" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="160"/>
+                                <rect key="frame" x="0.0" y="228" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zBp-TK-ynk" id="3Ye-sJ-3a3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
@@ -221,10 +243,13 @@
                             <outlet property="delegate" destination="ky6-Dx-yO9" id="L8b-7I-xcI"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="statusMapView" destination="OKr-cZ-flr" id="Efb-OF-DgE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bsW-9U-QqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.5999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1053.5999999999999" y="133.13343328335833"/>
         </scene>
     </scenes>
 </document>

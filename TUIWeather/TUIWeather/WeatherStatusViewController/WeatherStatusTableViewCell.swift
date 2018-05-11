@@ -11,6 +11,7 @@ import UIKit
 class WeatherStatusTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel : UILabel!
     @IBOutlet weak var dayView : WeatherStatusDayView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         prepareForReuse()

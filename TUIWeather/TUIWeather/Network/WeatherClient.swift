@@ -8,12 +8,7 @@ enum ClientError : Error {
 
 
 class WeatherClient {
-    enum CityIdentifier : String {
-        case London = "2643743"
-        case Endinburgh = "2650225"
-        case Dublin = ""
-        case Cardiff = "2172349"
-    }
+    
     static let jsonDecoder = JSONDecoder()
     
     lazy var networkManager  = RequestManager.shared
@@ -55,8 +50,5 @@ class WeatherClient {
             }
         }
     }
-    
-    
-   // http://openweathermap.org/img/w/10d.png
 }
 
