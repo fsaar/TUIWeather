@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u1B-HQ-3eV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="G11-TE-bcm">
+            <objects>
+                <navigationController id="u1B-HQ-3eV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3dj-J2-Ndl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JHk-Mz-C7Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cci-t7-8Da" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666" y="140"/>
+        </scene>
         <!--Weather Status View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,17 +36,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQK-uh-6gR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQK-uh-6gR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="602"/>
                                 <connections>
                                     <segue destination="ky6-Dx-yO9" kind="embed" identifier="WeatherStatusTableViewControllerSegue" id="onW-kX-GPb"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIV-Lx-kI4">
+                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVb-B1-lKD">
+                                        <rect key="frame" x="110" y="13" width="155" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Change Location">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateLocationHandler" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4r-jS-ZYs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.59655515939597314" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bVb-B1-lKD" firstAttribute="centerX" secondItem="oIV-Lx-kI4" secondAttribute="centerX" id="IQe-OD-pjB"/>
+                                    <constraint firstAttribute="height" constant="65" id="cRo-K6-odG"/>
+                                    <constraint firstItem="bVb-B1-lKD" firstAttribute="centerY" secondItem="oIV-Lx-kI4" secondAttribute="centerY" id="mW2-fI-caE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OQK-uh-6gR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ACR-ZT-jW4"/>
+                            <constraint firstAttribute="trailing" secondItem="oIV-Lx-kI4" secondAttribute="trailing" id="CII-Xy-Gv0"/>
+                            <constraint firstAttribute="trailing" secondItem="OQK-uh-6gR" secondAttribute="trailing" id="Iyx-Fx-NSA"/>
+                            <constraint firstItem="oIV-Lx-kI4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="atj-Cq-Q1y"/>
+                            <constraint firstItem="OQK-uh-6gR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dsc-4C-8jS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oIV-Lx-kI4" secondAttribute="bottom" id="fls-Vi-pIG"/>
+                            <constraint firstItem="oIV-Lx-kI4" firstAttribute="top" secondItem="OQK-uh-6gR" secondAttribute="bottom" id="vRT-ch-WP1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lVx-kM-D70"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +87,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="WeatherStatusTableViewController" id="ky6-Dx-yO9" customClass="WeatherStatusTableViewController" customModule="TUIWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eMV-sh-LDq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="602"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>

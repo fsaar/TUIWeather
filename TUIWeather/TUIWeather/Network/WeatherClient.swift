@@ -18,7 +18,7 @@ class WeatherClient {
     
     lazy var networkManager  = RequestManager.shared
     
-    func cityWeatherForecast(with identifier: String,
+    func cityWeatherForecast(with identifier: Int,
                                      with operationQueue : OperationQueue = OperationQueue.main,
                                      using completionBlock:@escaping ((WeatherInfoList?,_ error:Error?) -> ()))  {
         let cityWeatherPath = "/data/2.5/forecast"

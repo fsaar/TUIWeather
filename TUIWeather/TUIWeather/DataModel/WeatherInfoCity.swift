@@ -14,8 +14,10 @@ import Foundation
  }
  
  */
-struct WeatherInfoCity : Decodable,CustomStringConvertible {
-    
+struct WeatherInfoCity : Decodable,CustomStringConvertible,Equatable {
+    static func ==(lhs : WeatherInfoCity,rhs : WeatherInfoCity) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
     private enum CodingKeys : String,CodingKey {
         case identifier = "id"
         case name = "name"
