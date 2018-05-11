@@ -16,6 +16,7 @@
 		56017D4A20A4F36B00520C5E /* ukcityList.json in Resources */ = {isa = PBXBuildFile; fileRef = 56017D4920A4F36B00520C5E /* ukcityList.json */; };
 		562579C120A62D7F00F26D02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 562579BD20A62D7F00F26D02 /* Localizable.strings */; };
 		562579C420A634E600F26D02 /* WeatherStatusMapVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579C320A634E600F26D02 /* WeatherStatusMapVIew.swift */; };
+		562579CC20A63E7400F26D02 /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579CB20A63E7400F26D02 /* RequestManagerTests.swift */; };
 		56577D0F20A392D700B40318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D0E20A392D700B40318 /* AppDelegate.swift */; };
 		56577D1120A392D700B40318 /* WeatherStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D1020A392D700B40318 /* WeatherStatusViewController.swift */; };
 		56577D1420A392D700B40318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56577D1220A392D700B40318 /* Main.storyboard */; };
@@ -28,6 +29,16 @@
 		56577D3720A3B75A00B40318 /* WeatherInfoCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3620A3B75A00B40318 /* WeatherInfoCity.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		562579CE20A63E7400F26D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56577D0320A392D700B40318 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56577D0A20A392D700B40318;
+			remoteInfo = TUIWeather;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		56017D3D20A4AF1E00520C5E /* WeatherStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewController.swift; sourceTree = "<group>"; };
 		56017D3F20A4B04600520C5E /* WeatherStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewCell.swift; sourceTree = "<group>"; };
@@ -38,6 +49,9 @@
 		56017D4920A4F36B00520C5E /* ukcityList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ukcityList.json; sourceTree = "<group>"; };
 		562579BE20A62D7F00F26D02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		562579C320A634E600F26D02 /* WeatherStatusMapVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusMapVIew.swift; sourceTree = "<group>"; };
+		562579C920A63E7400F26D02 /* TUIWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUIWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		562579CB20A63E7400F26D02 /* RequestManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManagerTests.swift; sourceTree = "<group>"; };
+		562579CD20A63E7400F26D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56577D0B20A392D700B40318 /* TUIWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUIWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56577D0E20A392D700B40318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56577D1020A392D700B40318 /* WeatherStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		562579C620A63E7400F26D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56577D0820A392D700B40318 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,10 +107,20 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		562579CA20A63E7400F26D02 /* TUIWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				562579CB20A63E7400F26D02 /* RequestManagerTests.swift */,
+				562579CD20A63E7400F26D02 /* Info.plist */,
+			);
+			path = TUIWeatherTests;
+			sourceTree = "<group>";
+		};
 		56577D0220A392D700B40318 = {
 			isa = PBXGroup;
 			children = (
 				56577D0D20A392D700B40318 /* TUIWeather */,
+				562579CA20A63E7400F26D02 /* TUIWeatherTests */,
 				56577D0C20A392D700B40318 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				56577D0B20A392D700B40318 /* TUIWeather.app */,
+				562579C920A63E7400F26D02 /* TUIWeatherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +173,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		562579C820A63E7400F26D02 /* TUIWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 562579D020A63E7400F26D02 /* Build configuration list for PBXNativeTarget "TUIWeatherTests" */;
+			buildPhases = (
+				562579C520A63E7400F26D02 /* Sources */,
+				562579C620A63E7400F26D02 /* Frameworks */,
+				562579C720A63E7400F26D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				562579CF20A63E7400F26D02 /* PBXTargetDependency */,
+			);
+			name = TUIWeatherTests;
+			productName = TUIWeatherTests;
+			productReference = 562579C920A63E7400F26D02 /* TUIWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		56577D0A20A392D700B40318 /* TUIWeather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56577D2020A392D900B40318 /* Build configuration list for PBXNativeTarget "TUIWeather" */;
@@ -168,6 +218,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = tui;
 				TargetAttributes = {
+					562579C820A63E7400F26D02 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 56577D0A20A392D700B40318;
+					};
 					56577D0A20A392D700B40318 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -187,11 +241,19 @@
 			projectRoot = "";
 			targets = (
 				56577D0A20A392D700B40318 /* TUIWeather */,
+				562579C820A63E7400F26D02 /* TUIWeatherTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		562579C720A63E7400F26D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56577D0920A392D700B40318 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +269,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		562579C520A63E7400F26D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				562579CC20A63E7400F26D02 /* RequestManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56577D0720A392D700B40318 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +299,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		562579CF20A63E7400F26D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56577D0A20A392D700B40318 /* TUIWeather */;
+			targetProxy = 562579CE20A63E7400F26D02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		562579BD20A62D7F00F26D02 /* Localizable.strings */ = {
@@ -258,6 +336,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		562579D120A63E7400F26D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF4LJPC23U;
+				INFOPLIST_FILE = TUIWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tui.weather.TUIWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUIWeather.app/TUIWeather";
+			};
+			name = Debug;
+		};
+		562579D220A63E7400F26D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RF4LJPC23U;
+				INFOPLIST_FILE = TUIWeatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tui.weather.TUIWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUIWeather.app/TUIWeather";
+			};
+			name = Release;
+		};
 		56577D1E20A392D900B40318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,6 +529,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		562579D020A63E7400F26D02 /* Build configuration list for PBXNativeTarget "TUIWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				562579D120A63E7400F26D02 /* Debug */,
+				562579D220A63E7400F26D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		56577D0620A392D700B40318 /* Build configuration list for PBXProject "TUIWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
