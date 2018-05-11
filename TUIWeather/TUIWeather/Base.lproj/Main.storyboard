@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.59655515939597314" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="bVb-B1-lKD" firstAttribute="centerX" secondItem="oIV-Lx-kI4" secondAttribute="centerX" id="IQe-OD-pjB"/>
                                     <constraint firstAttribute="height" constant="65" id="cRo-K6-odG"/>
@@ -100,12 +100,22 @@
                                         <outlet property="delegate" destination="OKr-cZ-flr" id="CPl-F9-mjs"/>
                                     </connections>
                                 </mapView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wj-fh-q7l" userLabel="separator">
+                                    <rect key="frame" x="0.0" y="199" width="375" height="1"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Pdm-Jl-Mah"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="Qq3-kh-VoT" firstAttribute="leading" secondItem="OKr-cZ-flr" secondAttribute="leading" id="CtS-8w-cJj"/>
                                 <constraint firstAttribute="trailing" secondItem="Qq3-kh-VoT" secondAttribute="trailing" id="E9k-Of-T6K"/>
+                                <constraint firstAttribute="bottom" secondItem="2Wj-fh-q7l" secondAttribute="bottom" id="Hk4-s7-Ipj"/>
                                 <constraint firstItem="Qq3-kh-VoT" firstAttribute="top" secondItem="OKr-cZ-flr" secondAttribute="top" id="LP9-EC-24b"/>
+                                <constraint firstItem="2Wj-fh-q7l" firstAttribute="leading" secondItem="OKr-cZ-flr" secondAttribute="leading" id="PqP-sy-ClX"/>
+                                <constraint firstAttribute="trailing" secondItem="2Wj-fh-q7l" secondAttribute="trailing" id="XFR-hK-VSl"/>
                                 <constraint firstAttribute="bottom" secondItem="Qq3-kh-VoT" secondAttribute="bottom" id="uN5-tI-Ynx"/>
                             </constraints>
                             <connections>
