@@ -1,0 +1,32 @@
+{
+    "dt": "1526083200",
+    "main": [{
+        "temp_min": 282.22,
+        "temp_max": 282.442,
+        "pressure": 998.41,
+        "sea_level": 1023.7,
+        "grnd_level": 998.41,
+        "humidity": 83,
+        "temp_kf": -0.22
+    }],
+    "weather": [{
+                "id": 500,
+                "main": "Rain",
+                "description": "light rain",
+                "icon": "10n"
+                }],
+    "clouds": {
+        "all": 80
+    },
+    "wind": {
+        "speed": 3.91,
+        "deg": 178
+    },
+    "rain": {
+        "3h": 0.47
+    },
+    "sys": {
+        "pod": "n"
+    },
+    "dt_txt": "2018-05-12 00:00:00"
+}

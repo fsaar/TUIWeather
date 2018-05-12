@@ -1,0 +1,27 @@
+{
+	"cod": "200",
+	"message": 0.0064,
+	"cnt": 40,
+	"list": [{
+		"dt": "1526083200",
+		"main": {
+			"temp": [""],
+			"temp_min": 282.22,
+			"temp_max": 282.442,
+			"pressure": 998.41,
+			"sea_level": 1023.7,
+			"grnd_level": 998.41,
+			"humidity": 83,
+			"temp_kf": -0.22
+		}
+	}],
+	"city": {
+		"id": 2650225,
+		"name": "Edinburgh (local)",
+		"coord": {
+			"lat": 55.9521,
+			"lon": -3.1965
+		},
+		"country": "GB"
+	}
+}
