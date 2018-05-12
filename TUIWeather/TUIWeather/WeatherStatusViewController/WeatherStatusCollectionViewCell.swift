@@ -13,7 +13,7 @@ class WeatherStatusCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var temperature : UILabel!
     @IBOutlet weak var time : UILabel!
     private var model : WeatherStatusTableViewModel?
-    private lazy var weatherImageCache =  WeatherStatusImageCache.shared
+    lazy var weatherImageCache =  WeatherStatusImageCache.shared
     
     override func awakeFromNib() {
         super.awakeFromNib()
