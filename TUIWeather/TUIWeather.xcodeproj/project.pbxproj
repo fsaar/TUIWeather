@@ -27,9 +27,10 @@
 		562579EA20A76DD200F26D02 /* WeatherInfoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E820A76DD200F26D02 /* WeatherInfoListTests.swift */; };
 		562579EC20A76DFC00F26D02 /* weatherInfoCity.json in Resources */ = {isa = PBXBuildFile; fileRef = 562579EB20A76DFB00F26D02 /* weatherInfoCity.json */; };
 		562579EE20A76E9F00F26D02 /* invalidWeatherInfoCity.json in Resources */ = {isa = PBXBuildFile; fileRef = 562579ED20A76E9F00F26D02 /* invalidWeatherInfoCity.json */; };
-		562579F120A776AA00F26D02 /* WeatherStatusMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F020A776AA00F26D02 /* WeatherStatusMapViewTests.swift */; };
 		562579F320A783D100F26D02 /* invalidWeatherInfoCityWithInvalidCoords.json in Resources */ = {isa = PBXBuildFile; fileRef = 562579F220A783D100F26D02 /* invalidWeatherInfoCityWithInvalidCoords.json */; };
-		562579F520A7860500F26D02 /* WeatherStatusDayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F420A7860400F26D02 /* WeatherStatusDayViewTests.swift */; };
+		562579F820A79C4100F26D02 /* WeatherStatusDayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F620A79C4100F26D02 /* WeatherStatusDayViewTests.swift */; };
+		562579F920A79C4100F26D02 /* WeatherStatusMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F720A79C4100F26D02 /* WeatherStatusMapViewTests.swift */; };
+		562579FB20A79C8100F26D02 /* WeatherStatusTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579FA20A79C8000F26D02 /* WeatherStatusTableViewCellTests.swift */; };
 		56577D0F20A392D700B40318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D0E20A392D700B40318 /* AppDelegate.swift */; };
 		56577D1120A392D700B40318 /* WeatherStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D1020A392D700B40318 /* WeatherStatusViewController.swift */; };
 		56577D1420A392D700B40318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56577D1220A392D700B40318 /* Main.storyboard */; };
@@ -75,9 +76,10 @@
 		562579E820A76DD200F26D02 /* WeatherInfoListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoListTests.swift; sourceTree = "<group>"; };
 		562579EB20A76DFB00F26D02 /* weatherInfoCity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weatherInfoCity.json; sourceTree = "<group>"; };
 		562579ED20A76E9F00F26D02 /* invalidWeatherInfoCity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalidWeatherInfoCity.json; sourceTree = "<group>"; };
-		562579F020A776AA00F26D02 /* WeatherStatusMapViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusMapViewTests.swift; sourceTree = "<group>"; };
 		562579F220A783D100F26D02 /* invalidWeatherInfoCityWithInvalidCoords.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalidWeatherInfoCityWithInvalidCoords.json; sourceTree = "<group>"; };
-		562579F420A7860400F26D02 /* WeatherStatusDayViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusDayViewTests.swift; sourceTree = "<group>"; };
+		562579F620A79C4100F26D02 /* WeatherStatusDayViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusDayViewTests.swift; sourceTree = "<group>"; };
+		562579F720A79C4100F26D02 /* WeatherStatusMapViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusMapViewTests.swift; sourceTree = "<group>"; };
+		562579FA20A79C8000F26D02 /* WeatherStatusTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewCellTests.swift; sourceTree = "<group>"; };
 		56577D0B20A392D700B40318 /* TUIWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUIWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56577D0E20A392D700B40318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56577D1020A392D700B40318 /* WeatherStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusViewController.swift; sourceTree = "<group>"; };
@@ -115,9 +117,9 @@
 			children = (
 				562579C320A634E600F26D02 /* WeatherStatusMapVIew.swift */,
 				56017D4520A4E36000520C5E /* WeatherStatusDayView.swift */,
+				56017D3F20A4B04600520C5E /* WeatherStatusTableViewCell.swift */,
 				56577D1020A392D700B40318 /* WeatherStatusViewController.swift */,
 				56017D3D20A4AF1E00520C5E /* WeatherStatusTableViewController.swift */,
-				56017D3F20A4B04600520C5E /* WeatherStatusTableViewCell.swift */,
 				56017D4320A4E0B100520C5E /* WeatherStatusCollectionViewCell.swift */,
 				56017D4120A4CEF300520C5E /* WeatherStatusTableViewModel.swift */,
 				56017D4720A4EFE400520C5E /* WeatherStatusImageCache.swift */,
@@ -173,8 +175,9 @@
 		562579EF20A776AA00F26D02 /* WeatherStatusViewController */ = {
 			isa = PBXGroup;
 			children = (
-				562579F020A776AA00F26D02 /* WeatherStatusMapViewTests.swift */,
-				562579F420A7860400F26D02 /* WeatherStatusDayViewTests.swift */,
+				562579F620A79C4100F26D02 /* WeatherStatusDayViewTests.swift */,
+				562579F720A79C4100F26D02 /* WeatherStatusMapViewTests.swift */,
+				562579FA20A79C8000F26D02 /* WeatherStatusTableViewCellTests.swift */,
 			);
 			path = WeatherStatusViewController;
 			sourceTree = "<group>";
@@ -343,11 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562579F920A79C4100F26D02 /* WeatherStatusMapViewTests.swift in Sources */,
+				562579F820A79C4100F26D02 /* WeatherStatusDayViewTests.swift in Sources */,
+				562579FB20A79C8100F26D02 /* WeatherStatusTableViewCellTests.swift in Sources */,
 				562579E920A76DD200F26D02 /* WeatherInfoTests.swift in Sources */,
 				562579E620A76DA900F26D02 /* WeatherInfoCityTest.swift in Sources */,
-				562579F120A776AA00F26D02 /* WeatherStatusMapViewTests.swift in Sources */,
 				562579D520A75AD000F26D02 /* RequestManagerTests.swift in Sources */,
-				562579F520A7860500F26D02 /* WeatherStatusDayViewTests.swift in Sources */,
 				562579D720A75AF100F26D02 /* WeatherClientTests.swift in Sources */,
 				562579EA20A76DD200F26D02 /* WeatherInfoListTests.swift in Sources */,
 			);
