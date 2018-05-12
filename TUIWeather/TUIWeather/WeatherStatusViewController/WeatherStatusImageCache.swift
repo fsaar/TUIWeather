@@ -10,7 +10,7 @@ import UIKit
 
 class WeatherStatusImageCache {
     fileprivate var imageCache : [String : UIImage] = [:]
-    fileprivate lazy var weatherClient = WeatherClient()
+    lazy var weatherClient = WeatherClient()
     static let shared = WeatherStatusImageCache()
     
     func image(for identifier : String, using completionBlock : @escaping (_ image : UIImage?) -> Void) {
