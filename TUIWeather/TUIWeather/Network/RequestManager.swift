@@ -10,8 +10,12 @@ class RequestManager : NSObject {
     fileprivate let ApplicationID = "ea7de0326863831395fe4487ac2fb3f1"
     public static let shared =  RequestManager()
 
-    lazy var session = URLSession(configuration: .default)
-
+    lazy var session : URLSession = {
+        let config = URLSessionConfiguration.default
+        config.timeoutIntervalForRequest = 5.0
+        let session = URLSession(configuration: config)
+        return session
+    }()
     public func getDataWithRelativePath(relativePath: String ,and query: [String]? = nil, completionBlock:@escaping ((_ data : Data?,_ error:Error?) -> Void)) {
         guard let url =  self.baseURL(withPath: relativePath,and: query) else {
             completionBlock(nil,RequestManagerErrorType.InvalidURL(urlString: relativePath))

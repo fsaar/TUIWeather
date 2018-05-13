@@ -67,6 +67,17 @@ class WeatherStatusViewController: UIViewController {
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func showRetryError() {
+        let alertController = UIAlertController(title: NSLocalizedString("WeatherStatusViewController.Error",comment:""), message: NSLocalizedString("WeatherStatusViewController.ErrorMessage",comment:""), preferredStyle: .alert)
+        if let city = self.currentCity {
+            let retryAction = UIAlertAction(title: NSLocalizedString("WeatherStatusViewController.Retry",comment:""), style: .default) { [weak self] _ in
+                self?.updateLocation(to: city)
+            }
+            alertController.addAction(retryAction)
+        }
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
 
 // MARK : Private
@@ -74,7 +85,13 @@ class WeatherStatusViewController: UIViewController {
 fileprivate extension WeatherStatusViewController {
     func updateLocation(to city: WeatherInfoCity) {
         weatherClient.cityWeatherForecast(with: city.identifier) { [weak self] weatherInfoList,_ in
-            self?.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
+            if let weatherInfoList = weatherInfoList {
+                self?.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
+            }
+            else
+            {
+                self?.showRetryError()
+            }
         }
     }
 }

@@ -1,3 +1,5 @@
 "WeatherStatusViewController.ChangeLocation" = "Change location";
 "WeatherStatusViewController.Cancel" = "Cancel";
-
+"WeatherStatusViewController.ErrorMessage" = "Unable to fetch weather forecast";
+"WeatherStatusViewController.Error" = "Network Error";
+"WeatherStatusViewController.Retry" = "Retry";
