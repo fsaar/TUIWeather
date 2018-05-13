@@ -62,6 +62,25 @@ class WeatherStatusViewControllerTests: XCTestCase {
         XCTAssertNotNil(controller.weatherStatusTableViewController!.weatherInfoList)
     }
     
+    func testShouldShowAlertViewWhenTapingUpdateLocation() {
+        let delegate = UIApplication.shared.delegate! as! AppDelegate
+        let window = delegate.window
+        window?.rootViewController = controller
+        _ = controller.view
+        let button =  controller.updateLocationButton!
+        let target = button.allTargets.first!
+        let action = button.actions(forTarget: target,forControlEvent: .touchUpInside)?.first!
+        let buttonSelector = NSSelectorFromString(action!)
+        UIView.setAnimationsEnabled(false)
+         controller.perform(buttonSelector,with: controller.updateLocationButton!)
+      
+        let presentedController = controller.presentedViewController
+        XCTAssertTrue(presentedController is UIAlertController)
+        UIView.setAnimationsEnabled(true)
+
+        
+        
+    }
   
     
 }
