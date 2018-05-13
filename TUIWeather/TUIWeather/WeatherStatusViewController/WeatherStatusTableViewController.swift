@@ -38,6 +38,8 @@ class WeatherStatusTableViewController: UITableViewController {
     }
 }
 
+// MARK : Private
+
 fileprivate extension WeatherStatusTableViewController {
     func viewModels(with infoList : WeatherInfoList?) -> [WeatherStatusTableViewControllerModel] {
         guard let infoList = infoList else {
