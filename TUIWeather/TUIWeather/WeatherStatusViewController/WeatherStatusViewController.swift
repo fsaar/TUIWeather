@@ -35,8 +35,8 @@ class WeatherStatusViewController: UIViewController {
         return cities
     }()
     
-    fileprivate let weather = WeatherClient()
-    private var weatherStatusTableViewController : WeatherStatusTableViewController?
+    lazy var weatherClient = WeatherClient()
+    fileprivate(set) var weatherStatusTableViewController : WeatherStatusTableViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +71,7 @@ class WeatherStatusViewController: UIViewController {
 
 fileprivate extension WeatherStatusViewController {
     func updateLocation(to city: WeatherInfoCity) {
-        weather.cityWeatherForecast(with: city.identifier) { [weak self] weatherInfoList,_ in
+        weatherClient.cityWeatherForecast(with: city.identifier) { [weak self] weatherInfoList,_ in
             self?.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
         }
     }
