@@ -34,6 +34,7 @@
 		562579FD20A79F9400F26D02 /* WeatherStatusCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579FC20A79F9400F26D02 /* WeatherStatusCollectionViewCellTests.swift */; };
 		56257A0120A86F6800F26D02 /* WeatherStatusImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0020A86F6800F26D02 /* WeatherStatusImageCacheTests.swift */; };
 		56257A0320A86F8700F26D02 /* WeatherStatusTableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0220A86F8700F26D02 /* WeatherStatusTableViewModelTests.swift */; };
+		56257A0520A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0420A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift */; };
 		56577D0F20A392D700B40318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D0E20A392D700B40318 /* AppDelegate.swift */; };
 		56577D1120A392D700B40318 /* WeatherStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D1020A392D700B40318 /* WeatherStatusViewController.swift */; };
 		56577D1420A392D700B40318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56577D1220A392D700B40318 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		562579FC20A79F9400F26D02 /* WeatherStatusCollectionViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusCollectionViewCellTests.swift; sourceTree = "<group>"; };
 		56257A0020A86F6800F26D02 /* WeatherStatusImageCacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusImageCacheTests.swift; sourceTree = "<group>"; };
 		56257A0220A86F8700F26D02 /* WeatherStatusTableViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewModelTests.swift; sourceTree = "<group>"; };
+		56257A0420A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewControllerTests.swift; sourceTree = "<group>"; };
 		56577D0B20A392D700B40318 /* TUIWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUIWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56577D0E20A392D700B40318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56577D1020A392D700B40318 /* WeatherStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +129,8 @@
 				56017D4320A4E0B100520C5E /* WeatherStatusCollectionViewCell.swift */,
 				56017D4720A4EFE400520C5E /* WeatherStatusImageCache.swift */,
 				56017D4120A4CEF300520C5E /* WeatherStatusTableViewModel.swift */,
-				56577D1020A392D700B40318 /* WeatherStatusViewController.swift */,
 				56017D3D20A4AF1E00520C5E /* WeatherStatusTableViewController.swift */,
+				56577D1020A392D700B40318 /* WeatherStatusViewController.swift */,
 			);
 			path = WeatherStatusViewController;
 			sourceTree = "<group>";
@@ -187,6 +189,7 @@
 				562579FC20A79F9400F26D02 /* WeatherStatusCollectionViewCellTests.swift */,
 				56257A0020A86F6800F26D02 /* WeatherStatusImageCacheTests.swift */,
 				56257A0220A86F8700F26D02 /* WeatherStatusTableViewModelTests.swift */,
+				56257A0420A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift */,
 			);
 			path = WeatherStatusViewController;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56257A0520A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift in Sources */,
 				562579F920A79C4100F26D02 /* WeatherStatusMapViewTests.swift in Sources */,
 				562579F820A79C4100F26D02 /* WeatherStatusDayViewTests.swift in Sources */,
 				562579FB20A79C8100F26D02 /* WeatherStatusTableViewCellTests.swift in Sources */,
