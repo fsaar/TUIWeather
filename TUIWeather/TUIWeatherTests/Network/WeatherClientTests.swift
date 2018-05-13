@@ -61,7 +61,7 @@ class WeatherClientTests: XCTestCase {
             weatherInfoList = infoList
             expectation.fulfill()
         }
-        self.wait(for: [expectation], timeout: 1.0)
+        self.wait(for: [expectation], timeout: 2.0)
         XCTAssertNil(weatherInfoList)
     }
   
