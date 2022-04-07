@@ -7,21 +7,20 @@
 //
 
 import UIKit
+import PromiseKit
 
 class WeatherStatusImageCache {
     fileprivate var imageCache : [String : UIImage] = [:]
     lazy var weatherClient = WeatherClient()
     static let shared = WeatherStatusImageCache()
     
-    func image(for identifier : String, using completionBlock : @escaping (_ image : UIImage?) -> Void) {
-        if let image = imageCache[identifier] {
-            completionBlock(image)
-        }
-        else {
-            self.weatherClient.statusImage(with:identifier) { [weak self] image,_ in
+    func image(for identifier : String) -> Promise<UIImage> {
+        guard let image = imageCache[identifier] else {
+            return self.weatherClient.statusImage(with:identifier).then { [weak self] (image:UIImage) -> Promise<UIImage> in
                 self?.imageCache[identifier] = image
-                completionBlock(image)
+                return Promise.value(image)
             }
         }
+        return Promise.value(image)
     }
 }
