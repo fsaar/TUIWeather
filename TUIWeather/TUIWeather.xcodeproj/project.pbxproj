@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		555CA312FE8F7E1E6FA8431B /* libPods-TUIWeatherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 358D77FC1F221E24B34733A5 /* libPods-TUIWeatherTests.a */; };
 		56017D3E20A4AF1E00520C5E /* WeatherStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56017D3D20A4AF1E00520C5E /* WeatherStatusTableViewController.swift */; };
 		56017D4020A4B04600520C5E /* WeatherStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56017D3F20A4B04600520C5E /* WeatherStatusTableViewCell.swift */; };
 		56017D4220A4CEF300520C5E /* WeatherStatusTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56017D4120A4CEF300520C5E /* WeatherStatusTableViewModel.swift */; };
@@ -46,6 +47,7 @@
 		56577D3120A3AD0E00B40318 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3020A3AD0E00B40318 /* WeatherInfo.swift */; };
 		56577D3320A3B1F100B40318 /* WeatherInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3220A3B1F100B40318 /* WeatherInfoList.swift */; };
 		56577D3720A3B75A00B40318 /* WeatherInfoCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3620A3B75A00B40318 /* WeatherInfoCity.swift */; };
+		749E48FB918A8B9DEACA4F5C /* libPods-TUIWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E76D0B1F7F8691A4BC539307 /* libPods-TUIWeather.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252D9F4C67EBE6D339F15274 /* Pods-TUIWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIWeather.release.xcconfig"; path = "Target Support Files/Pods-TUIWeather/Pods-TUIWeather.release.xcconfig"; sourceTree = "<group>"; };
+		326946F84035DD0BBA60BF98 /* Pods-TUIWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIWeather.debug.xcconfig"; path = "Target Support Files/Pods-TUIWeather/Pods-TUIWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		358D77FC1F221E24B34733A5 /* libPods-TUIWeatherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TUIWeatherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56017D3D20A4AF1E00520C5E /* WeatherStatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewController.swift; sourceTree = "<group>"; };
 		56017D3F20A4B04600520C5E /* WeatherStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewCell.swift; sourceTree = "<group>"; };
 		56017D4120A4CEF300520C5E /* WeatherStatusTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatusTableViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +107,9 @@
 		56577D3020A3AD0E00B40318 /* WeatherInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		56577D3220A3B1F100B40318 /* WeatherInfoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoList.swift; sourceTree = "<group>"; };
 		56577D3620A3B75A00B40318 /* WeatherInfoCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherInfoCity.swift; sourceTree = "<group>"; };
+		7275BC434643A20CBB7351A2 /* Pods-TUIWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIWeatherTests.debug.xcconfig"; path = "Target Support Files/Pods-TUIWeatherTests/Pods-TUIWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2DA2AEC98C235D67DDA48D7 /* Pods-TUIWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TUIWeatherTests.release.xcconfig"; path = "Target Support Files/Pods-TUIWeatherTests/Pods-TUIWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		E76D0B1F7F8691A4BC539307 /* libPods-TUIWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TUIWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555CA312FE8F7E1E6FA8431B /* libPods-TUIWeatherTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749E48FB918A8B9DEACA4F5C /* libPods-TUIWeather.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +213,8 @@
 				56577D0D20A392D700B40318 /* TUIWeather */,
 				562579CA20A63E7400F26D02 /* TUIWeatherTests */,
 				56577D0C20A392D700B40318 /* Products */,
+				5DE0E6C54BE7824A64AAA183 /* Pods */,
+				A80FAE5421B9FA79A3435B0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,6 +263,27 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		5DE0E6C54BE7824A64AAA183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				326946F84035DD0BBA60BF98 /* Pods-TUIWeather.debug.xcconfig */,
+				252D9F4C67EBE6D339F15274 /* Pods-TUIWeather.release.xcconfig */,
+				7275BC434643A20CBB7351A2 /* Pods-TUIWeatherTests.debug.xcconfig */,
+				B2DA2AEC98C235D67DDA48D7 /* Pods-TUIWeatherTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A80FAE5421B9FA79A3435B0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76D0B1F7F8691A4BC539307 /* libPods-TUIWeather.a */,
+				358D77FC1F221E24B34733A5 /* libPods-TUIWeatherTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 562579D020A63E7400F26D02 /* Build configuration list for PBXNativeTarget "TUIWeatherTests" */;
 			buildPhases = (
+				EDA4502F23A93A2AF3567786 /* [CP] Check Pods Manifest.lock */,
 				562579C520A63E7400F26D02 /* Sources */,
 				562579C620A63E7400F26D02 /* Frameworks */,
 				562579C720A63E7400F26D02 /* Resources */,
@@ -276,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56577D2020A392D900B40318 /* Build configuration list for PBXNativeTarget "TUIWeather" */;
 			buildPhases = (
+				7F9E00F9731E926B92768842 /* [CP] Check Pods Manifest.lock */,
 				56577D0720A392D700B40318 /* Sources */,
 				56577D0820A392D700B40318 /* Frameworks */,
 				56577D0920A392D700B40318 /* Resources */,
@@ -355,6 +390,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F9E00F9731E926B92768842 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TUIWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA4502F23A93A2AF3567786 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TUIWeatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		562579C520A63E7400F26D02 /* Sources */ = {
@@ -438,6 +520,7 @@
 /* Begin XCBuildConfiguration section */
 		562579D120A63E7400F26D02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7275BC434643A20CBB7351A2 /* Pods-TUIWeatherTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +541,7 @@
 		};
 		562579D220A63E7400F26D02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2DA2AEC98C235D67DDA48D7 /* Pods-TUIWeatherTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +676,7 @@
 		};
 		56577D2120A392D900B40318 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326946F84035DD0BBA60BF98 /* Pods-TUIWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -610,6 +695,7 @@
 		};
 		56577D2220A392D900B40318 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252D9F4C67EBE6D339F15274 /* Pods-TUIWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
