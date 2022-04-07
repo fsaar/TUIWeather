@@ -24,7 +24,8 @@
 		077B56F5710626A328858EDB53C52701 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002CAAA58085113CBA045DABCC5B7128 /* UIView+Promise.swift */; };
 		09A142223FACDC2B7CEBD7395486B8CB /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F42D24341C8457FE690188AC7790166 /* afterlife.swift */; };
 		0FDE095E89F05E213329BBFA88AD300E /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE63AFFB05DBBFCFB24116D9758891D /* AnyPromise.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		130F84495EF757AC232CF149577D5E05 /* Pods-TUIWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DD5CE510CE06867C1D6228D3D420DC /* Pods-TUIWeather-dummy.m */; };
+		130F84495EF757AC232CF149577D5E05 /* Pods-TUIWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A306F4D72728B932CA53695CFF5AF4 /* Pods-TUIWeather-dummy.m */; };
+		18E9D7672663D098A2568EA42B988B26 /* Pods-TUIWeatherTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0A0179F6B3129F8212E83FA508CA18 /* Pods-TUIWeatherTests-dummy.m */; };
 		1FB1F117339468B6C778CD44D4C5D3E6 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BB70C151692B71488C51F00B5426BF /* when.swift */; };
 		21080D416E534562978BCE331D90908C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F19FD614E1558169E14DB3D386FF1D /* Box.swift */; };
 		24E9D91450C7908F0F22E873C109BAB5 /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A768DB59328F5D271AF0678D1E1A0BD /* race.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -37,7 +38,6 @@
 		351ACE44E3CBFA5E20F1AA6C0505657F /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D831948CF254D56F29645D9DB79BD3 /* NSURLSession+Promise.swift */; };
 		401EDABAAEA6D093BE85DC8F14BC6DDB /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DE281913E1307552590FDC57073F6B /* NSURLSession+AnyPromise.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4110780B520CFC9456AEBC3286B256D6 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B7C7AA377A349E7F00DD2212CD7A5 /* after.swift */; };
-		481C4200815E690B2C60021EC6257EA5 /* Pods-TUIWeatherTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D855ADC0D81D70E0ABBA43C7A8E2CFF /* Pods-TUIWeatherTests-dummy.m */; };
 		53AD6F7BEA6A66339B068062AC51939E /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD98BC3CAB4782150A94F33ECBACDCF /* NSNotificationCenter+Promise.swift */; };
 		53B0ABA7022C346D26FF07C65D9646EC /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 70560364BBDB195133BB26F50D701E0B /* after.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5A8E48FCD1A2C4A4DB9D081A0F220103 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67095EE6772BB7ACE71DE2884A338BE /* Promise.swift */; };
@@ -68,11 +68,19 @@
 		E40639741C49E1D7D040EBDFF1CA2816 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551D3F58175692D9EA776054A1C06B4 /* PromiseKit-dummy.m */; };
 		E47BD123681C0C10CA88B95C49A63ED5 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 3785DABC529D413BC1642E23A7EA8FCC /* fwd.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E7B22817CFED89DAD3FB241ED8E761CF /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 544145F3E56C4D5ACAE8FB316DC4F73F /* PromiseKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F129262152AC240DA46352595536D216 /* Pods-TUIWeatherTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2681267FFCFC828AE9772614B6D6DDF /* Pods-TUIWeatherTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FABAA7945823F520569FD9F8BE69FC91 /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FD568ABEA342AA0772A1C0E33B7CED /* PMKFoundation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FE7F996D2C910794F9E3B07C92A1B0FE /* Pods-TUIWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B83014DAAE8155C908240BD97329D8E /* Pods-TUIWeather-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE7F996D2C910794F9E3B07C92A1B0FE /* Pods-TUIWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2583EAC0E7A6415F4539A38E153097 /* Pods-TUIWeather-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2839A4687C1A0D0536B629ECC67ADE6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C579CE66A1E7A9AA33CA5F97F9C22C5;
+			remoteInfo = PromiseKit;
+		};
 		52ED86522BD1533C22BD8E58989449FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -90,19 +98,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00243CBC0E6882BF431AA088DF76DB15 /* Pods-TUIWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeather.release.xcconfig"; sourceTree = "<group>"; };
 		002B1E88BA14EBF633CD66EBFBA107E9 /* libPromiseKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPromiseKit.a; path = libPromiseKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		002CAAA58085113CBA045DABCC5B7128 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
-		00F161F5164E9EEB4FC5D56E87804AAD /* Pods-TUIWeatherTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TUIWeatherTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		018692FD00573484E6039A1609A7A3BC /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		0B83014DAAE8155C908240BD97329D8E /* Pods-TUIWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TUIWeather-umbrella.h"; sourceTree = "<group>"; };
+		02A306F4D72728B932CA53695CFF5AF4 /* Pods-TUIWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TUIWeather-dummy.m"; sourceTree = "<group>"; };
+		06823FECFE079A4137C699946C4BC949 /* Pods-TUIWeatherTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TUIWeatherTests.modulemap"; sourceTree = "<group>"; };
+		0E2583EAC0E7A6415F4539A38E153097 /* Pods-TUIWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TUIWeather-umbrella.h"; sourceTree = "<group>"; };
 		0E5ACD5B5D05227193B4D5BD640F4356 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
 		11D831948CF254D56F29645D9DB79BD3 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		14FD568ABEA342AA0772A1C0E33B7CED /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
 		1A768DB59328F5D271AF0678D1E1A0BD /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
+		1A83A07F3E131CEB8FA4A6A8A9E36269 /* Pods-TUIWeatherTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TUIWeatherTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1C0E32CB9A5ABCF9C28C64E88D338E69 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
 		1DE85FFDC04EF9B57A4F3E34F28EBA3D /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
-		23A97C984A733D941910EC243D0B1298 /* Pods-TUIWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		24FF38A55776F7CD5D14AB3B06D7E25C /* Pods-TUIWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		2551D3F58175692D9EA776054A1C06B4 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		27C8FEE5049C3E0A586FCD8C63500D35 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
 		2DA84A114D337A247FABACA96290B8F8 /* PromiseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.release.xcconfig; sourceTree = "<group>"; };
@@ -114,23 +123,24 @@
 		3FF342FB02668D1D7923B94DE5C9ECAE /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
 		4154CFF9B6EFE8C947168682F59883CE /* PromiseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.debug.xcconfig; sourceTree = "<group>"; };
 		41F19FD614E1558169E14DB3D386FF1D /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		44C2831AE09005DF1219E6A4C6D183DD /* Pods-TUIWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TUIWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46E51053994F5556CEE75951C74F220F /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		49CE9A02861E091CDAEFC15B246DEA87 /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
+		4DFAD54F9CE7D090CD130EE59979895B /* Pods-TUIWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TUIWeather-acknowledgements.plist"; sourceTree = "<group>"; };
 		544145F3E56C4D5ACAE8FB316DC4F73F /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
-		551B6B3FBAF38FD66D230CF3F560A602 /* Pods-TUIWeatherTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TUIWeatherTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5D1F5E81CBA79BF8600B2FB1DF7AB7AF /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		61BB70C151692B71488C51F00B5426BF /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		62DE281913E1307552590FDC57073F6B /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
-		6489630A0E1CD30848B4893521DBBE0D /* Pods-TUIWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		6748D9C2DD27827BE1FFCB76F77CB5AC /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
 		6B018652D62C551B30C6369328997CB2 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
-		6EF5A2CF977B08938DBAC67F65417CD5 /* Pods-TUIWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TUIWeather-acknowledgements.plist"; sourceTree = "<group>"; };
 		70560364BBDB195133BB26F50D701E0B /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
 		7073F24C9BCA5C74C3BB45AE4848ACB0 /* LogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
+		73129360016AC365CC2D272C05130524 /* Pods-TUIWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TUIWeather.modulemap"; sourceTree = "<group>"; };
 		751CACC4AD1D8C202FC98A337FCC08AC /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		7A460CA2EC96174ED1CCE8BDE6A530D2 /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
 		7F42D24341C8457FE690188AC7790166 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		81065F9FC6D7C5FE63B0FD0A7BF3C6E8 /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
+		8441B5CA3F24C4078F922A1B74337AF6 /* Pods-TUIWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeather.release.xcconfig"; sourceTree = "<group>"; };
 		85B50BB506DB64D4277274AF50291C00 /* libPods-TUIWeatherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TUIWeatherTests.a"; path = "libPods-TUIWeatherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8693073A5CAB1E0BA1E8316B989C5FD0 /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
 		87C132349B73599E64D8AA79AD2C756F /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
@@ -139,7 +149,7 @@
 		952EA491F32B723401321CEE7119C54F /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		964B7C7AA377A349E7F00DD2212CD7A5 /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
 		98F5F9DBB4D35B84CE406480DEE24D2C /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
-		9D855ADC0D81D70E0ABBA43C7A8E2CFF /* Pods-TUIWeatherTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TUIWeatherTests-dummy.m"; sourceTree = "<group>"; };
+		9A8ED8C2E6CBDDCABF27A74C424B039F /* Pods-TUIWeatherTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TUIWeatherTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3E2CB4C40E6B3E6364D352CD870F4BD /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
 		A48864283028140454773E4949462DD1 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
@@ -147,19 +157,19 @@
 		B98EE7FB82A0313BAA7DE3B5BB5A1367 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
 		BFE63AFFB05DBBFCFB24116D9758891D /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
 		CE56869BC078D0DD5DDD5CCDF747D5BD /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
-		CF01F35A0AA31A6BC751D24DF8B23231 /* Pods-TUIWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TUIWeather.modulemap"; sourceTree = "<group>"; };
 		D0F07E53C33E9B841614D8FE5876963B /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
+		D2681267FFCFC828AE9772614B6D6DDF /* Pods-TUIWeatherTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TUIWeatherTests-umbrella.h"; sourceTree = "<group>"; };
 		D5A6F80679EA47AB7793BC4E50150099 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
 		DA250144412B4B8E2AC564EA8FD1A89F /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
-		E0DD5CE510CE06867C1D6228D3D420DC /* Pods-TUIWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TUIWeather-dummy.m"; sourceTree = "<group>"; };
-		E1D79CA558D4BDBCCEC2C1EDB238EB7B /* Pods-TUIWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TUIWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF0A0179F6B3129F8212E83FA508CA18 /* Pods-TUIWeatherTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TUIWeatherTests-dummy.m"; sourceTree = "<group>"; };
 		E1EABD09529D37037297EA85DC7AD36A /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
 		E2049A05C75643B5C085C962CF7A576B /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
 		E4D8938D37BC0BB09973899E08D1CF45 /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
+		E5BB54566112F843F6083631B92B5DF1 /* Pods-TUIWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E67095EE6772BB7ACE71DE2884A338BE /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
-		EB03F3F6E902731CBC77987C1FC9EF94 /* Pods-TUIWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F84D0734FA41D2BD257B21C3F26EE978 /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
 		FD4651B6BF06CE450A240A7780AE13D5 /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
+		FEEE21BD0B71C9310289CABACE0C8FD8 /* Pods-TUIWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TUIWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,14 +180,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C4F1754A43FAF75ABCE7E91FEF59F0B /* Frameworks */ = {
+		8B2F91E6CE7122E09060C575B28AA55E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B2F91E6CE7122E09060C575B28AA55E /* Frameworks */ = {
+		D20B4BC42C59B3BB5EF885996516DC07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,6 +216,21 @@
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
+		1FF825065476B3C198A4615C6745E82C /* Pods-TUIWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				06823FECFE079A4137C699946C4BC949 /* Pods-TUIWeatherTests.modulemap */,
+				1A83A07F3E131CEB8FA4A6A8A9E36269 /* Pods-TUIWeatherTests-acknowledgements.markdown */,
+				9A8ED8C2E6CBDDCABF27A74C424B039F /* Pods-TUIWeatherTests-acknowledgements.plist */,
+				DF0A0179F6B3129F8212E83FA508CA18 /* Pods-TUIWeatherTests-dummy.m */,
+				D2681267FFCFC828AE9772614B6D6DDF /* Pods-TUIWeatherTests-umbrella.h */,
+				E5BB54566112F843F6083631B92B5DF1 /* Pods-TUIWeatherTests.debug.xcconfig */,
+				24FF38A55776F7CD5D14AB3B06D7E25C /* Pods-TUIWeatherTests.release.xcconfig */,
+			);
+			name = "Pods-TUIWeatherTests";
+			path = "Target Support Files/Pods-TUIWeatherTests";
+			sourceTree = "<group>";
+		};
 		2AFF83AA2C4AB3B6524949FF61C6B29C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +238,15 @@
 				04AD31520FDC6DE177322328BA03C6B7 /* SwiftLint */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3381B3671282C58C9A8A3E4E02347971 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A73BC059D60FAE3F240A1B853FE38D35 /* Pods-TUIWeather */,
+				1FF825065476B3C198A4615C6745E82C /* Pods-TUIWeatherTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		4186C27C002F85F83204D516EF30368C /* Products */ = {
@@ -239,34 +273,6 @@
 			name = UIKit;
 			sourceTree = "<group>";
 		};
-		8057309F950425DAEAF2454A8C5C176C /* Pods-TUIWeather */ = {
-			isa = PBXGroup;
-			children = (
-				CF01F35A0AA31A6BC751D24DF8B23231 /* Pods-TUIWeather.modulemap */,
-				E1D79CA558D4BDBCCEC2C1EDB238EB7B /* Pods-TUIWeather-acknowledgements.markdown */,
-				6EF5A2CF977B08938DBAC67F65417CD5 /* Pods-TUIWeather-acknowledgements.plist */,
-				E0DD5CE510CE06867C1D6228D3D420DC /* Pods-TUIWeather-dummy.m */,
-				0B83014DAAE8155C908240BD97329D8E /* Pods-TUIWeather-umbrella.h */,
-				23A97C984A733D941910EC243D0B1298 /* Pods-TUIWeather.debug.xcconfig */,
-				00243CBC0E6882BF431AA088DF76DB15 /* Pods-TUIWeather.release.xcconfig */,
-			);
-			name = "Pods-TUIWeather";
-			path = "Target Support Files/Pods-TUIWeather";
-			sourceTree = "<group>";
-		};
-		87F1E23310033ABD7C56A405BE8E161A /* Pods-TUIWeatherTests */ = {
-			isa = PBXGroup;
-			children = (
-				551B6B3FBAF38FD66D230CF3F560A602 /* Pods-TUIWeatherTests-acknowledgements.markdown */,
-				00F161F5164E9EEB4FC5D56E87804AAD /* Pods-TUIWeatherTests-acknowledgements.plist */,
-				9D855ADC0D81D70E0ABBA43C7A8E2CFF /* Pods-TUIWeatherTests-dummy.m */,
-				EB03F3F6E902731CBC77987C1FC9EF94 /* Pods-TUIWeatherTests.debug.xcconfig */,
-				6489630A0E1CD30848B4893521DBBE0D /* Pods-TUIWeatherTests.release.xcconfig */,
-			);
-			name = "Pods-TUIWeatherTests";
-			path = "Target Support Files/Pods-TUIWeatherTests";
-			sourceTree = "<group>";
-		};
 		9DCAB1C75A509D6363163559E9DFCC44 /* PromiseKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +285,21 @@
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
+		A73BC059D60FAE3F240A1B853FE38D35 /* Pods-TUIWeather */ = {
+			isa = PBXGroup;
+			children = (
+				73129360016AC365CC2D272C05130524 /* Pods-TUIWeather.modulemap */,
+				44C2831AE09005DF1219E6A4C6D183DD /* Pods-TUIWeather-acknowledgements.markdown */,
+				4DFAD54F9CE7D090CD130EE59979895B /* Pods-TUIWeather-acknowledgements.plist */,
+				02A306F4D72728B932CA53695CFF5AF4 /* Pods-TUIWeather-dummy.m */,
+				0E2583EAC0E7A6415F4539A38E153097 /* Pods-TUIWeather-umbrella.h */,
+				FEEE21BD0B71C9310289CABACE0C8FD8 /* Pods-TUIWeather.debug.xcconfig */,
+				8441B5CA3F24C4078F922A1B74337AF6 /* Pods-TUIWeather.release.xcconfig */,
+			);
+			name = "Pods-TUIWeather";
+			path = "Target Support Files/Pods-TUIWeather";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -286,7 +307,7 @@
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				2AFF83AA2C4AB3B6524949FF61C6B29C /* Pods */,
 				4186C27C002F85F83204D516EF30368C /* Products */,
-				EA1FDA3053FD58B77B5E64D00FCD0DE1 /* Targets Support Files */,
+				3381B3671282C58C9A8A3E4E02347971 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,15 +366,6 @@
 			name = CorePromise;
 			sourceTree = "<group>";
 		};
-		EA1FDA3053FD58B77B5E64D00FCD0DE1 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8057309F950425DAEAF2454A8C5C176C /* Pods-TUIWeather */,
-				87F1E23310033ABD7C56A405BE8E161A /* Pods-TUIWeatherTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		F4AA9FED9888D8FC8235C93F32FC9A6E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,10 +406,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89118D78889DE255DC2CC8BB108A904B /* Headers */ = {
+		4ABA45A9E0272F0B029D52F96765B98D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F129262152AC240DA46352595536D216 /* Pods-TUIWeatherTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,15 +445,16 @@
 		};
 		D6A8AC8751CC65D0E26F1DFD65BD8617 /* Pods-TUIWeatherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C31652D948F11430342930BB6C96966 /* Build configuration list for PBXNativeTarget "Pods-TUIWeatherTests" */;
+			buildConfigurationList = D4352FF334FB96A6080D03929632BC91 /* Build configuration list for PBXNativeTarget "Pods-TUIWeatherTests" */;
 			buildPhases = (
-				89118D78889DE255DC2CC8BB108A904B /* Headers */,
-				D46EA80D6032827431AA73F05E3D4027 /* Sources */,
-				5C4F1754A43FAF75ABCE7E91FEF59F0B /* Frameworks */,
+				4ABA45A9E0272F0B029D52F96765B98D /* Headers */,
+				AC3F6033DC58E2A0CFF1EEEC39F5BA91 /* Sources */,
+				D20B4BC42C59B3BB5EF885996516DC07 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9C8A8FC6D3B48E800EF4A677FA9747F /* PBXTargetDependency */,
 			);
 			name = "Pods-TUIWeatherTests";
 			productName = "Pods-TUIWeatherTests";
@@ -576,11 +590,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D46EA80D6032827431AA73F05E3D4027 /* Sources */ = {
+		AC3F6033DC58E2A0CFF1EEEC39F5BA91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481C4200815E690B2C60021EC6257EA5 /* Pods-TUIWeatherTests-dummy.m in Sources */,
+				18E9D7672663D098A2568EA42B988B26 /* Pods-TUIWeatherTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +612,12 @@
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
 			targetProxy = 91AC245AE2B72C0B7142A035804CC743 /* PBXContainerItemProxy */;
+		};
+		D9C8A8FC6D3B48E800EF4A677FA9747F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
+			targetProxy = 2839A4687C1A0D0536B629ECC67ADE6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -618,27 +638,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		0F315B056FA8B49547EBCAF4CFE7E581 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB03F3F6E902731CBC77987C1FC9EF94 /* Pods-TUIWeatherTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		43E090B15DC89D442DF1EAEC7AC3647A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -766,7 +765,7 @@
 		};
 		7FEF315BCA5C8016FB3CC12B7D0BFFE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23A97C984A733D941910EC243D0B1298 /* Pods-TUIWeather.debug.xcconfig */;
+			baseConfigurationReference = FEEE21BD0B71C9310289CABACE0C8FD8 /* Pods-TUIWeather.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -786,9 +785,9 @@
 			};
 			name = Debug;
 		};
-		B62616B6B088CAA987BE12D44385FB11 /* Release */ = {
+		8A5A2E6C0A1EA3193D99649E9E23C680 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6489630A0E1CD30848B4893521DBBE0D /* Pods-TUIWeatherTests.release.xcconfig */;
+			baseConfigurationReference = E5BB54566112F843F6083631B92B5DF1 /* Pods-TUIWeatherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -797,6 +796,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TUIWeatherTests/Pods-TUIWeatherTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -804,9 +804,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		C034C4D935F592912CAEBE0BE3BD0104 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -834,7 +833,7 @@
 		};
 		CEB9682EF044046BE5041F134E464B3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00243CBC0E6882BF431AA088DF76DB15 /* Pods-TUIWeather.release.xcconfig */;
+			baseConfigurationReference = 8441B5CA3F24C4078F922A1B74337AF6 /* Pods-TUIWeather.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -870,6 +869,29 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		F8BB5757718428695956F39C317542EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24FF38A55776F7CD5D14AB3B06D7E25C /* Pods-TUIWeatherTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TUIWeatherTests/Pods-TUIWeatherTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		FCA92A536E5EB50F603F2E21EBB61F67 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -917,15 +939,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C31652D948F11430342930BB6C96966 /* Build configuration list for PBXNativeTarget "Pods-TUIWeatherTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0F315B056FA8B49547EBCAF4CFE7E581 /* Debug */,
-				B62616B6B088CAA987BE12D44385FB11 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6DEB81DA820BE94FEE00A0B95D4C7D9B /* Build configuration list for PBXNativeTarget "Pods-TUIWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -940,6 +953,15 @@
 			buildConfigurations = (
 				D86F6C8508ED371D7CBECC6632784BD2 /* Debug */,
 				08CCD7E78728291264A399BA9AE86996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4352FF334FB96A6080D03929632BC91 /* Build configuration list for PBXNativeTarget "Pods-TUIWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5A2E6C0A1EA3193D99649E9E23C680 /* Debug */,
+				F8BB5757718428695956F39C317542EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

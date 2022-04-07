@@ -1,0 +1,6 @@
+module Pods_TUIWeatherTests {
+  umbrella header "Pods-TUIWeatherTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

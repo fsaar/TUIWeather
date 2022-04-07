@@ -9,6 +9,7 @@ target 'TUIWeather' do
 end
 
 target 'TUIWeatherTests' do
+ pod "PromiseKit", "~> 6.8"
 #    pod 'Quick', '2.2.0'
 #    pod 'Nimble', '8.0.5'
 end
