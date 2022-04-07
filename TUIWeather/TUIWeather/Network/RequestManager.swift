@@ -1,4 +1,5 @@
 import Foundation
+import PromiseKit
 
 enum RequestManagerErrorType : Error {
     case InvalidURL(urlString : String)
@@ -30,10 +31,14 @@ class RequestManager : NSObject {
 //
 extension RequestManager {
     fileprivate func getDataWithURL(URL: URL , completionBlock:@escaping ((_ data : Data?,_ error:Error?) -> Void)) {
-        let task = session.dataTask(with: URL) { data, _, error in
-            completionBlock(data,error)
+        firstly {
+            session.dataTask(.promise, with: URL).validate()
+            // ^^ we provide `.validate()` so that eg. 404s get converted to errors
+        }.done { data,_ in
+            completionBlock(data,nil)
+        }.catch { error in
+            completionBlock(nil,error)
         }
-        task.resume()
     }
     
     fileprivate func baseURL(withPath path: String,and query: [String]? = nil) -> URL? {
