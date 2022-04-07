@@ -331,15 +331,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = tui;
 				TargetAttributes = {
 					562579C820A63E7400F26D02 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1300;
 						TestTargetID = 56577D0A20A392D700B40318;
 					};
 					56577D0A20A392D700B40318 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -552,7 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tui.weather.TUIWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUIWeather.app/TUIWeather";
 			};
@@ -574,7 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tui.weather.TUIWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUIWeather.app/TUIWeather";
 			};
@@ -606,6 +608,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -666,6 +669,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -709,7 +713,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tui.weather.TUIWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -729,7 +733,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tui.weather.TUIWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

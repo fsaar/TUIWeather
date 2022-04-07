@@ -9,6 +9,7 @@ class TestURLSession : URLSession {
     override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask {
         return dataTask?(url,completionHandler) ?? URLSession(configuration: .default).dataTask(with: url,completionHandler:completionHandler)
     }
+    
 }
 
 class RequestManagerTests: XCTestCase {
@@ -69,7 +70,7 @@ class RequestManagerTests: XCTestCase {
         }.catch { error in
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10)
+        wait(for: [expectation], timeout: 100)
         XCTAssert(taskCalled == true) 
     }
     
@@ -86,7 +87,7 @@ class RequestManagerTests: XCTestCase {
         }.catch { error in
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10)
+        wait(for: [expectation], timeout: 100)
         XCTAssert(hasAppID == true)
     }
     
