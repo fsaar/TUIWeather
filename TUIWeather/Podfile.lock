@@ -1,16 +1,20 @@
 PODS:
+  - PromiseKit/CorePromise (6.15.3)
   - SwiftLint (0.38.1)
 
 DEPENDENCIES:
+  - PromiseKit/CorePromise (~> 6.8)
   - SwiftLint (= 0.38.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - PromiseKit
     - SwiftLint
 
 SPEC CHECKSUMS:
+  PromiseKit: 3b2b6995e51a954c46dbc550ce3da44fbfb563c5
   SwiftLint: 0aeb99ca7ccfc222ef93e2560a35e669f5465e6c
 
-PODFILE CHECKSUM: 6ab6e02c1d534ff36d49448b089147cd871b218f
+PODFILE CHECKSUM: 7606c3ea89ef2cff521a50a091f7551440967054
 
 COCOAPODS: 1.9.3
