@@ -86,7 +86,6 @@ class WeatherStatusViewController: UIViewController {
 fileprivate extension WeatherStatusViewController {
     func updateLocation(to city: WeatherInfoCity) {
         _ = weatherClient.cityWeatherForecast(with: city.identifier).done { [weak self] weatherInfoList in
-            
                 self?.weatherStatusTableViewController?.weatherInfoList = weatherInfoList
         }.catch { [weak self] _ in
             self?.showRetryError()

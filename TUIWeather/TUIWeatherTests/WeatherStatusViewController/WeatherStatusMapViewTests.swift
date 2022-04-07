@@ -21,10 +21,10 @@ class WeatherStatusMapViewTests: XCTestCase {
         super.setUp()
         let path = Bundle(for:type(of: self)).path(forResource: "weatherInfoCity", ofType: "json")!
         let weatherInfoCityData = NSData(contentsOfFile: path)! as Data
-        city = try! WeatherClient.jsonDecoder.decode(WeatherInfoCity.self,from: weatherInfoCityData)
+        city = try! JSONDecoder().decode(WeatherInfoCity.self,from: weatherInfoCityData)
         let invalidPath = Bundle(for:type(of: self)).path(forResource: "invalidWeatherInfoCityWithInvalidCoords", ofType: "json")!
         let invalidWeatherInfoCityData = NSData(contentsOfFile: invalidPath)! as Data
-        invalidCity = try! WeatherClient.jsonDecoder.decode(WeatherInfoCity.self,from: invalidWeatherInfoCityData)
+        invalidCity = try! JSONDecoder().decode(WeatherInfoCity.self,from: invalidWeatherInfoCityData)
     }
     
     func testThatItShouldSetACitysCoordinate() {

@@ -42,7 +42,7 @@ class WeatherStatusDayViewTests: XCTestCase {
         super.setUp()
         let path = Bundle(for:type(of: self)).path(forResource: "weatherInfoList", ofType: "json")!
         let weatherInfoListData = NSData(contentsOfFile: path)! as Data
-        let weatherInfoList = try! WeatherClient.jsonDecoder.decode(WeatherInfoList.self,from: weatherInfoListData)
+        let weatherInfoList = try! JSONDecoder().decode(WeatherInfoList.self,from: weatherInfoListData)
         tableViewModels = viewModels(with: weatherInfoList).first!.models
     }
     

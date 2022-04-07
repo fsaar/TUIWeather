@@ -1,24 +1,30 @@
 
 import XCTest
 import Foundation
+import PromiseKit
 @testable import TUIWeather
 
 
 private class MockWeatherClient : WeatherClient {
-    
-    var foreCastBlock : (() -> (WeatherInfoList?,Error?))?
-    override func cityWeatherForecast(with identifier: Int,
-                                      with operationQueue : OperationQueue = OperationQueue.main,
-                                      using completionBlock:@escaping ((WeatherInfoList?,_ error:Error?) -> ()))   {
-        let tuple = foreCastBlock?()
-        if let tuple = tuple {
-            completionBlock(tuple.0,tuple.1)
-        }
-        else {
-            completionBlock(nil,nil)
-        }
-        
+    enum MockError : Error {
+        case noError
     }
+    var foreCastBlock : (() -> (WeatherInfoList?,Error?))?
+    
+    override func cityWeatherForecast(with identifier: Int,on queue : DispatchQueue = .main) -> Promise<WeatherInfoList> {
+        
+        let tuple = foreCastBlock?()
+        if let value = tuple?.0 {
+            return Promise.value(value)
+        }
+        else  if let error = tuple?.1 {
+            return Promise(error: error)
+        }
+        return Promise(error: MockError.noError)
+    }
+    
+    
+   
 }
 
 
@@ -31,7 +37,7 @@ class WeatherStatusViewControllerTests: XCTestCase {
         super.setUp()
         let path = Bundle(for:type(of: self)).path(forResource: "weatherInfoList", ofType: "json")!
         let weatherInfoListData = NSData(contentsOfFile: path)! as Data
-        weatherInfoList = try! WeatherClient.jsonDecoder.decode(WeatherInfoList.self,from: weatherInfoListData)
+        weatherInfoList = try! JSONDecoder().decode(WeatherInfoList.self,from: weatherInfoListData)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         controller = storyboard.instantiateViewController(withIdentifier: String(describing:WeatherStatusViewController.self)) as? WeatherStatusViewController
         weatherClient = MockWeatherClient()
@@ -55,10 +61,17 @@ class WeatherStatusViewControllerTests: XCTestCase {
     }
     
     func testThatItShouldInitialiseTableViewControllerWithCity() {
+        let expectation = expectation(description: "weatherinfo")
         weatherClient.foreCastBlock = {
             return (self.weatherInfoList,nil)
         }
         _ = controller.view
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 5.0)
+
         XCTAssertNotNil(controller.weatherStatusTableViewController!.weatherInfoList)
     }
     

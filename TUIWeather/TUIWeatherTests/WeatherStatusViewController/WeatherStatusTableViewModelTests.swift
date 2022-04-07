@@ -11,7 +11,7 @@ class WeatherStatusTableViewModelTests: XCTestCase {
         super.setUp()
         let path = Bundle(for:type(of: self)).path(forResource: "weatherInfo", ofType: "json")!
         let weatherInfoData = NSData(contentsOfFile: path)! as Data
-        weatherInfo = try! WeatherClient.jsonDecoder.decode(WeatherInfo.self,from: weatherInfoData)
+        weatherInfo = try! JSONDecoder().decode(WeatherInfo.self,from: weatherInfoData)
     }
     
     func testThatItShouldSetupDataCorrectly() {

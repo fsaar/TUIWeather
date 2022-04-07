@@ -2,12 +2,15 @@
 import XCTest
 import MapKit
 import Foundation
+import PromiseKit
+
 @testable import TUIWeather
 
 class MockImageCache : WeatherStatusImageCache {
     var fetchImageCalled = false
-    override func image(for identifier : String, using completionBlock : @escaping (_ image : UIImage?) -> Void) {
+    override func image(for identifier : String) -> Promise<UIImage> {
         fetchImageCalled = true
+        return Promise.value(UIImage())
     }
 }
 
@@ -35,7 +38,7 @@ class WeatherStatusCollectionViewCellTests: XCTestCase {
         super.setUp()
         let path = Bundle(for:type(of: self)).path(forResource: "weatherInfoList", ofType: "json")!
         let weatherInfoListData = NSData(contentsOfFile: path)! as Data
-        let weatherInfoList = try! WeatherClient.jsonDecoder.decode(WeatherInfoList.self,from: weatherInfoListData)
+        let weatherInfoList = try! JSONDecoder().decode(WeatherInfoList.self,from: weatherInfoListData)
         
         tableViewModel = viewModels(with: weatherInfoList).first!.models.first!
         temperatureLabel = UILabel(frame: .zero)

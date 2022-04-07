@@ -17,7 +17,6 @@
 		56017D4A20A4F36B00520C5E /* ukcityList.json in Resources */ = {isa = PBXBuildFile; fileRef = 56017D4920A4F36B00520C5E /* ukcityList.json */; };
 		562579C120A62D7F00F26D02 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 562579BD20A62D7F00F26D02 /* Localizable.strings */; };
 		562579C420A634E600F26D02 /* WeatherStatusMapVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579C320A634E600F26D02 /* WeatherStatusMapVIew.swift */; };
-		562579D720A75AF100F26D02 /* WeatherClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579D620A75AF000F26D02 /* WeatherClientTests.swift */; };
 		562579D920A75C3200F26D02 /* weatherInfoList.json in Resources */ = {isa = PBXBuildFile; fileRef = 562579D820A75C3200F26D02 /* weatherInfoList.json */; };
 		562579DE20A76ABD00F26D02 /* invalidWeatherInfoList.json in Resources */ = {isa = PBXBuildFile; fileRef = 562579DD20A76ABD00F26D02 /* invalidWeatherInfoList.json */; };
 		562579E020A76BD000F26D02 /* weatherInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 562579DF20A76BD000F26D02 /* weatherInfo.json */; };
@@ -35,18 +34,19 @@
 		56577D3120A3AD0E00B40318 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3020A3AD0E00B40318 /* WeatherInfo.swift */; };
 		56577D3320A3B1F100B40318 /* WeatherInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3220A3B1F100B40318 /* WeatherInfoList.swift */; };
 		56577D3720A3B75A00B40318 /* WeatherInfoCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56577D3620A3B75A00B40318 /* WeatherInfoCity.swift */; };
-		56BDE01927FF3B10000A115C /* WeatherStatusMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F720A79C4100F26D02 /* WeatherStatusMapViewTests.swift */; };
-		56BDE01A27FF3B10000A115C /* WeatherStatusCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579FC20A79F9400F26D02 /* WeatherStatusCollectionViewCellTests.swift */; };
-		56BDE01B27FF3B10000A115C /* WeatherStatusDayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F620A79C4100F26D02 /* WeatherStatusDayViewTests.swift */; };
-		56BDE01C27FF3B10000A115C /* WeatherInfoCityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E520A76DA900F26D02 /* WeatherInfoCityTest.swift */; };
 		56BDE01D27FF3B10000A115C /* WeatherStatusViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0620A87CA400F26D02 /* WeatherStatusViewControllerTests.swift */; };
-		56BDE01E27FF3B10000A115C /* WeatherStatusTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579FA20A79C8000F26D02 /* WeatherStatusTableViewCellTests.swift */; };
-		56BDE01F27FF3B10000A115C /* WeatherStatusTableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0220A86F8700F26D02 /* WeatherStatusTableViewModelTests.swift */; };
-		56BDE02027FF3B10000A115C /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579D420A75AD000F26D02 /* RequestManagerTests.swift */; };
-		56BDE02127FF3B10000A115C /* WeatherStatusTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0420A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift */; };
-		56BDE02227FF3B10000A115C /* WeatherStatusImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0020A86F6800F26D02 /* WeatherStatusImageCacheTests.swift */; };
-		56BDE02327FF3B10000A115C /* WeatherInfoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E820A76DD200F26D02 /* WeatherInfoListTests.swift */; };
-		56BDE02427FF3B10000A115C /* WeatherInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E720A76DD200F26D02 /* WeatherInfoTests.swift */; };
+		56BDE02527FF71B1000A115C /* WeatherStatusTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0420A8719B00F26D02 /* WeatherStatusTableViewControllerTests.swift */; };
+		56BDE02627FF71E3000A115C /* WeatherStatusTableViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0220A86F8700F26D02 /* WeatherStatusTableViewModelTests.swift */; };
+		56BDE02727FF7248000A115C /* WeatherStatusImageCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56257A0020A86F6800F26D02 /* WeatherStatusImageCacheTests.swift */; };
+		56BDE02827FF7672000A115C /* WeatherStatusCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579FC20A79F9400F26D02 /* WeatherStatusCollectionViewCellTests.swift */; };
+		56BDE02927FF76C7000A115C /* WeatherStatusTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579FA20A79C8000F26D02 /* WeatherStatusTableViewCellTests.swift */; };
+		56BDE02A27FF76EE000A115C /* WeatherStatusMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F720A79C4100F26D02 /* WeatherStatusMapViewTests.swift */; };
+		56BDE02B27FF772D000A115C /* WeatherStatusDayViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579F620A79C4100F26D02 /* WeatherStatusDayViewTests.swift */; };
+		56BDE02C27FF775D000A115C /* WeatherInfoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E820A76DD200F26D02 /* WeatherInfoListTests.swift */; };
+		56BDE02D27FF776C000A115C /* WeatherInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E720A76DD200F26D02 /* WeatherInfoTests.swift */; };
+		56BDE02E27FF777A000A115C /* WeatherInfoCityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579E520A76DA900F26D02 /* WeatherInfoCityTest.swift */; };
+		56BDE03027FF7888000A115C /* WeatherClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579D620A75AF000F26D02 /* WeatherClientTests.swift */; };
+		56BDE03127FF7D47000A115C /* RequestManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562579D420A75AD000F26D02 /* RequestManagerTests.swift */; };
 		749E48FB918A8B9DEACA4F5C /* libPods-TUIWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E76D0B1F7F8691A4BC539307 /* libPods-TUIWeather.a */; };
 /* End PBXBuildFile section */
 
@@ -461,19 +461,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BDE02327FF3B10000A115C /* WeatherInfoListTests.swift in Sources */,
-				56BDE01927FF3B10000A115C /* WeatherStatusMapViewTests.swift in Sources */,
-				56BDE01C27FF3B10000A115C /* WeatherInfoCityTest.swift in Sources */,
-				56BDE02427FF3B10000A115C /* WeatherInfoTests.swift in Sources */,
-				56BDE02127FF3B10000A115C /* WeatherStatusTableViewControllerTests.swift in Sources */,
-				56BDE01A27FF3B10000A115C /* WeatherStatusCollectionViewCellTests.swift in Sources */,
-				56BDE01B27FF3B10000A115C /* WeatherStatusDayViewTests.swift in Sources */,
-				56BDE02227FF3B10000A115C /* WeatherStatusImageCacheTests.swift in Sources */,
-				56BDE01F27FF3B10000A115C /* WeatherStatusTableViewModelTests.swift in Sources */,
-				562579D720A75AF100F26D02 /* WeatherClientTests.swift in Sources */,
-				56BDE01E27FF3B10000A115C /* WeatherStatusTableViewCellTests.swift in Sources */,
+				56BDE02A27FF76EE000A115C /* WeatherStatusMapViewTests.swift in Sources */,
+				56BDE02527FF71B1000A115C /* WeatherStatusTableViewControllerTests.swift in Sources */,
+				56BDE02B27FF772D000A115C /* WeatherStatusDayViewTests.swift in Sources */,
+				56BDE02C27FF775D000A115C /* WeatherInfoListTests.swift in Sources */,
 				56BDE01D27FF3B10000A115C /* WeatherStatusViewControllerTests.swift in Sources */,
-				56BDE02027FF3B10000A115C /* RequestManagerTests.swift in Sources */,
+				56BDE02827FF7672000A115C /* WeatherStatusCollectionViewCellTests.swift in Sources */,
+				56BDE02D27FF776C000A115C /* WeatherInfoTests.swift in Sources */,
+				56BDE03127FF7D47000A115C /* RequestManagerTests.swift in Sources */,
+				56BDE02627FF71E3000A115C /* WeatherStatusTableViewModelTests.swift in Sources */,
+				56BDE02E27FF777A000A115C /* WeatherInfoCityTest.swift in Sources */,
+				56BDE03027FF7888000A115C /* WeatherClientTests.swift in Sources */,
+				56BDE02927FF76C7000A115C /* WeatherStatusTableViewCellTests.swift in Sources */,
+				56BDE02727FF7248000A115C /* WeatherStatusImageCacheTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

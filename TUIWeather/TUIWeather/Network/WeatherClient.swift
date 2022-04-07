@@ -15,13 +15,12 @@ class WeatherClient {
         case image = "/img/w/"
         
     }
-    static let jsonDecoder = JSONDecoder()
     
     lazy var networkManager  = RequestManager.shared
     
     func cityWeatherForecast(with identifier: Int,on queue : DispatchQueue = .main) -> Promise<WeatherInfoList> {
         return networkManager.getDataWithRelativePath(relativePath: APIPath.cityWeatherPath.rawValue,and:["id=\(identifier)"]).compactMap(on:queue) { data in
-               return try WeatherClient.jsonDecoder.decode(WeatherInfoList.self,from: data)
+               return try JSONDecoder().decode(WeatherInfoList.self,from: data)
         }
     }
     

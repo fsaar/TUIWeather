@@ -3,6 +3,7 @@ import PromiseKit
 
 enum RequestManagerErrorType : Error {
     case InvalidURL(urlString : String)
+    case noData
 }
 
 class RequestManager : NSObject {
@@ -23,11 +24,27 @@ class RequestManager : NSObject {
             let error = RequestManagerErrorType.InvalidURL(urlString: relativePath)
             return Promise(error: error)
         }
-        return firstly {
-            session.dataTask(.promise, with: url).validate()
-        }.map { data,_ in
-           return data
+        return Promise<Data> { promise in
+            
+            let task = session.dataTask(with: url, completionHandler: { data, _, error in
+                if let data = data  {
+                    promise.fulfill(data)
+                }
+                else if let error = error {
+                    promise.reject(error)
+                }
+                else {
+                    promise.reject(RequestManagerErrorType.noData)
+                }
+                
+            })
+            task.resume()
         }
+//        return firstly {
+//            session.dataTask(.promise, with: url).validate()
+//        }.map { data,_ in
+//           return data
+//        }
     }
 }
 
