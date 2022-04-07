@@ -21,4 +21,3 @@ struct WeatherInfoList : Decodable {
     let city : WeatherInfoCity
     let list : [WeatherInfo]
 }
-

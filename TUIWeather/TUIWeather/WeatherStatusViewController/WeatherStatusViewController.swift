@@ -80,8 +80,9 @@ class WeatherStatusViewController: UIViewController {
     }
 }
 
-// MARK : Private
-
+//
+// MARK: Private
+//
 fileprivate extension WeatherStatusViewController {
     func updateLocation(to city: WeatherInfoCity) {
         weatherClient.cityWeatherForecast(with: city.identifier) { [weak self] weatherInfoList,_ in
@@ -95,4 +96,3 @@ fileprivate extension WeatherStatusViewController {
         }
     }
 }
-

@@ -33,7 +33,7 @@ class WeatherStatusViewControllerTests: XCTestCase {
         let weatherInfoListData = NSData(contentsOfFile: path)! as Data
         weatherInfoList = try! WeatherClient.jsonDecoder.decode(WeatherInfoList.self,from: weatherInfoListData)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        controller = storyboard.instantiateViewController(withIdentifier: String(describing:WeatherStatusViewController.self)) as! WeatherStatusViewController
+        controller = storyboard.instantiateViewController(withIdentifier: String(describing:WeatherStatusViewController.self)) as? WeatherStatusViewController
         weatherClient = MockWeatherClient()
         controller.weatherClient = weatherClient
         

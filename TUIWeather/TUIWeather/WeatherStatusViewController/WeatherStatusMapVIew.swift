@@ -20,4 +20,3 @@ class WeatherStatusMapView: UIView {
         }
     }
 }
-

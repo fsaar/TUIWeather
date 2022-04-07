@@ -38,17 +38,18 @@ class WeatherStatusTableViewController: UITableViewController {
     }
 }
 
-// MARK : Private
-
+//
+// MARK: Private
+//
 fileprivate extension WeatherStatusTableViewController {
     func viewModels(with infoList : WeatherInfoList?) -> [WeatherStatusTableViewControllerModel] {
         guard let infoList = infoList else {
             return []
         }
         let viewModels = infoList.list.map { WeatherStatusTableViewModel(with: $0) }
-        let groupdict = Dictionary(grouping: viewModels,by: { $0.dateString })
+        let groupdict = Dictionary(grouping: viewModels) { $0.dateString }
         let minDate = Date(timeIntervalSince1970: 0)
         let dateStringTuples = groupdict.map { return (dateString:$0,date:$1.first?.date ?? minDate,models:$1) }
-        return dateStringTuples.sorted { $0.date < $1.date }.map { ($0.dateString,$0.models)}
+        return dateStringTuples.sorted { $0.date < $1.date }.map { ($0.dateString,$0.models) }
     }
 }

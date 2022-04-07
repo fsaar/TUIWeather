@@ -33,7 +33,7 @@ class WeatherStatusTableViewControllerTests: XCTestCase {
         let weatherInfoListData = NSData(contentsOfFile: path)! as Data
         weatherInfoList = try! WeatherClient.jsonDecoder.decode(WeatherInfoList.self,from: weatherInfoListData)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        controller = storyboard.instantiateViewController(withIdentifier: String(describing:WeatherStatusTableViewController.self)) as! WeatherStatusTableViewController
+        controller = storyboard.instantiateViewController(withIdentifier: String(describing:WeatherStatusTableViewController.self)) as? WeatherStatusTableViewController
         _ = controller.view
         
     }
