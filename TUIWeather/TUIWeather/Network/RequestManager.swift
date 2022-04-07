@@ -7,11 +7,11 @@ enum RequestManagerErrorType : Error {
 class RequestManager : NSObject {
     fileprivate let RequestManagerBaseURL = "https://api.openweathermap.org"
 
-    fileprivate let ApplicationID = "ea7de0326863831395fe4487ac2fb3f1"
+    fileprivate let ApplicationID = "ab5e6e4f054d3f7585df774299f1a6ad"
     public static let shared =  RequestManager()
 
     lazy var session : URLSession = {
-        let config = URLSessionConfiguration.default
+        let config = URLSessionConfiguration.ephemeral
         config.timeoutIntervalForRequest = 5.0
         let session = URLSession(configuration: config)
         return session
