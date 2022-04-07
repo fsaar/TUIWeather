@@ -26,7 +26,7 @@ class RequestManager : NSObject {
         }
         return Promise<Data> { promise in
             
-            let task = session.dataTask(with: url, completionHandler: { data, _, error in
+            let task = session.dataTask(with: url) { data, _, error in
                 if let data = data  {
                     promise.fulfill(data)
                 }
@@ -37,14 +37,9 @@ class RequestManager : NSObject {
                     promise.reject(RequestManagerErrorType.noData)
                 }
                 
-            })
+            }
             task.resume()
         }
-//        return firstly {
-//            session.dataTask(.promise, with: url).validate()
-//        }.map { data,_ in
-//           return data
-//        }
     }
 }
 
